@@ -1,0 +1,19 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 50vh;
+  transform: translate(0, -50%);
+  background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/black-friday-lateral-banner.jpg?v=1606115767);
+  width: 32px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 44px;
+    height: 260px;
+  }
+}

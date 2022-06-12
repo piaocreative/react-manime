@@ -1,0 +1,80 @@
+.container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: calc(50% - 30px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 32px 30px;
+    background:#f7f7f7;
+  }
+  
+  .title {
+    font-family: 'avenirHeavy';
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .onePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px 10px;
+  }
+  
+  .middleItem {
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #f7bfa0;
+  }
+
+  .question {
+    text-align: center;
+    font-size: 14px;
+    max-width: 110px;
+    padding: 8px 0;
+    font-family: 'avenirMedium';
+    background-image: url('/static/icons/water-drop.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .answer {
+    font-size: 12px;
+    max-width: 153px;
+    text-align: center;
+  }
+
+  .moveToFAQ {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .onePanel {
+    width: 33%;
+  }
+}

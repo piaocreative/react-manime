@@ -1,0 +1,89 @@
+.error {
+  color: #2c4349;
+}
+
+.darkButton {
+  width: calc(100% - 30px);
+  text-transform: capitalize;
+  font-size: 12px;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.content {
+  background-color: white;
+  color: #437986 !important ;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: min(  400px, 100vw);
+  padding-bottom: 30px;
+}
+.header {
+  flex-basis: content;
+  text-align: center;
+  font-family: 'GentiumBasic';
+  font-size: 23px;
+  letter-spacing: .38px;
+  line-height: 27px;
+
+}
+.hero {
+  background-image: url('https://cdn.shopify.com/s/files/1/0253/6561/0605/files/group-gift-redemption.jpg?v=1618246365');
+  background-position: center 20%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  height: 250px;
+  margin-bottom: -50px;
+  flex-basis: auto;
+}
+.steps {
+
+  font-family: 'AvenirHeavy';
+  font-size: 12px;
+  flex: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepsList{
+
+
+  font-family: 'AvenirBook';
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width:250px;
+  text-align: left;
+  padding-bottom: 20px
+
+}
+
+.stepsDrop{
+  background-image: url("/static/icons/water-drop.svg");
+  background-size: 27px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 28px;
+  text-align: center;
+  content: 'hello';
+  position: absolute;
+  margin-left: -30px;
+  padding-top: 8px;
+  font-family: 'AvenirHeavy';
+  font-size: 14.4px;
+}
+
+
+.welcomeButton {
+  flex: 1;
+}

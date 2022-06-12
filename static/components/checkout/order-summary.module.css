@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  grid-gap: 28px;
+}
+
+.root {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 16px;
+  background: #F9F9F9;
+  font-size: 14px;
+  order: 0;
+}
+
+.titleLine {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2c4349;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.line {
+  height: 0px;
+  border-bottom: 1px solid #2c4349;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.oneLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.underline {
+  text-decoration: underline;
+  text-transform: none;
+  cursor: pointer;
+}
+
+
+.whiteBox {
+  background: #fff;
+  width: 100%;
+}
+
+.mobileViewPlaceOrderPanel {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0px 2px 21px 0px #D5D5D5;
+}
+
+.desktopView {
+  display: block;
+}
+
+.orderTotalLine {
+  display: flex;
+  font-family: 'avenirBlack';
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.bold {
+  font-family: avenirHeavy;
+}
+
+@media (min-width: 480px) {
+  .root {
+    padding: 40px;
+  }
+
+  .mobileViewPlaceOrderPanel {
+    display: none;
+  }
+
+  .desktopView {
+    display: block;
+  }
+}

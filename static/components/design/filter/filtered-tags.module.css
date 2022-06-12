@@ -1,0 +1,62 @@
+.tagsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 16px ;
+  overflow-x: auto;
+}
+
+.label {
+  display: grid;
+  margin-bottom: 12px;
+  height: 32px;
+  place-items: center;
+  padding-right: 16px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.tagButton {
+  margin-right: 12px;
+  margin-bottom: 12px;
+  padding-right: 40px;
+  position: relative;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  min-width: 120px;
+  background: #E9ECEC;
+  color: #2c4349;
+}
+
+.tagButton:hover {
+  background: #E9ECEC;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 6px;
+  top: 1px;
+  font-size: 24px;
+  color: #2c4349;
+}
+
+.clearAll {
+  cursor: pointer;
+  text-decoration: underline;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-right: 4px;
+}
+
+@media (min-width: 768px) {
+  .tagsContainer {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .tagButton {
+    margin-right: 24px;
+  }
+}

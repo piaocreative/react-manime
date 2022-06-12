@@ -1,0 +1,171 @@
+.container {
+  background: #fdf3ed;
+  padding: 18px;
+  /* width: 100%; */
+  width: 480px;
+}
+
+.titleContainer {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 16px;
+  color: #2C4349;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.leftAlign {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.leftAlign2 {
+  text-align: left;
+  display: flex;
+}
+
+.description {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  color: #2C4349;
+  padding: 14.5px 8px;
+  border: 1px solid #F7BFA0;
+}
+
+.checkIcon {
+  width: 16px;
+  min-width: 16px;
+  margin: 0 10px;
+}
+
+.caution {
+  height: 22px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'avenirLight';
+}
+
+.backButton {
+  position: absolute;
+  left: 8px;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.backButton:hover {
+  padding: 6px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #F7BFA0;
+}
+
+.gifImage {
+  margin-top: 16px;
+  width: 100%;
+  height: calc(100vh - 284px);
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.retakeContinueContainer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+}
+
+.retakeConfirmMessage {
+  padding-top: 13px;
+}
+
+.lastConfirm {
+  font-size: 13px;
+  /* font-family: gentiumBasic; */
+  color: #2C4349;
+  padding: 8.8px 0;
+  text-align: center;
+}
+
+.retakePicturePanel {
+  padding-top: 14px;
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'avenirMedium';
+}
+
+.retakeActionLine {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.retakeButton {
+  width: 48%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #2C4349;
+  color: #2C4349;
+  text-align: center;
+  bottom: 40px;
+  visibility: hidden;
+}
+
+.continueButton {
+  width: 48%;
+  height: 40px;
+}
+
+.stepperContainer {
+  width: 100%;
+  padding: 0 2px;
+  margin-bottom: 16px;
+}
+
+.highLight {
+  font-family: 'avenirBlack';
+  color: #F7BFA0;
+}
+
+.bold {
+  font-family: 'avenirBlack';
+}
+
+.proTips {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+  background: #fdf3ed;
+  color: #f7bfa0;
+  letter-spacing: 2px;
+  padding: 0 12px;
+}
+
+@media (min-width: 414px) {
+  .checkIcon {
+    margin-left: 24px;
+  }
+} 

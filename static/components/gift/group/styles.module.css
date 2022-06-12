@@ -1,0 +1,170 @@
+
+
+.galleryRow {
+  display: flex;
+  background-color: #f7f3f0; 
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  text-align: center;
+}
+.galleryHeader {
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  font-family: 'GentiumBasic';
+  height: 50px;
+}
+
+.smallHeader {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.galleryRow a {
+  font-size: 12px;
+  font-family: 'avenirHeavy';
+  text-decoration: none;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .galleryRow{
+    height: 44px;
+    padding: 0px calc(50% - 300px);
+  }
+  .galleryRow a {
+    font-size: 14px;
+  }
+
+  .galleryHeader {
+    height: 64px;
+  }
+
+  .smallHeader {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+}
+
+.shopHeader {
+  height: 40px;
+  background-color: #fbf7f4;
+  color: #b9bfbf;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 10px;
+  align-items: center;
+}
+
+.shopHeader div {
+  color: #b9bfbf;
+}
+
+.smallDropContainer{
+  display: flex;
+
+  margin-bottom: -5px;
+}
+.arrow {
+  margin-left: 8px;
+  margin-top: -2px;
+}
+
+.smallDropContainer .dropText{
+  margin-left: -12px;
+  padding-right: 12px;
+  color: white;
+  font-size: 12px;;
+}
+.smallDropContainer .drop {
+  height: 18px;
+  margin-top: -5px;
+}
+.arrow {
+  height: 13px;
+}
+
+.stepsHeader {  
+    background-color: #f7f3f0; 
+    color:#213439;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 36px;
+    padding: 15px 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.shopHeader {
+  background-color: #f6efe7; 
+  color:#213439;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+}
+.shopHeader div{
+  color:#213439;
+}
+.stepsHeader img {
+  padding-left: 7px;
+  margin-bottom: -3px; 
+}
+.dropContainer {
+  padding-right: 15px;
+}
+
+.shopHeader .headerMenuRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+.headerMenuRow div{
+  font-size: 14px;
+}
+
+.shopHeader .menuItems {
+  font-family: AvenirHeavy;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.shopHeaderTitle{
+  padding: 10px 0px;
+  font-size: 20px;
+}
+.groupGiftContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.active {
+  color: #213439;
+  font-family: AvenirHeavy;
+}

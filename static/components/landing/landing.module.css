@@ -1,0 +1,68 @@
+.getSetButton {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.giftMomButton {
+  margin-left: 28px;
+  border: 1px solid #2c4349;
+}
+
+.imageStyle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toxinFree {
+  width: 32px;
+}
+
+.crueltyFree {
+  width: 40px;
+}
+
+.discoverButton {
+  margin-top: 8px;
+}
+
+.manimeLogo {
+  width: 90px;
+}
+
+@media (min-width: 768px) {
+  .imageStyle {
+    object-position: right;
+  }
+
+  .tempLanding {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .getMomButton {
+    margin-left: 36px;
+  }
+
+  .toxinFree {
+    width: 42px;
+  }
+
+  .crueltyFree {
+    width: 52px;
+  }
+
+  .discoverButton {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+  }
+
+  .manimeLogo {
+    width: 96px;
+  }
+}

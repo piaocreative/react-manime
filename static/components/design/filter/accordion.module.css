@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #474746;
+  margin-bottom: 12px;
+  font-family: 'avenirHeavy';
+  font-size: 12px;
+  color: #474746;
+  letter-spacing: 1px;
+}
+
+.arrow {
+  width: 16px;
+  cursor: pointer;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.childContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 480px) {
+  .container {
+    margin-top: 6px;
+  }
+  
+  .header {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+}

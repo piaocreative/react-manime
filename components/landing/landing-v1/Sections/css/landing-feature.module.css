@@ -1,0 +1,130 @@
+.container {
+  margin: 30px 0px 50px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.featurePanel {
+  /* padding: 24px 32px; */
+  outline: none;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+  font-size: 17px;
+  font-family: 'avenirHeavy';
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  
+  padding: 36px 16px;
+  text-align: center;
+  background: #F8F3F0;
+  height: 120px;
+}
+
+.descriptionText {
+  max-width: 240px;
+}
+
+.logoWrapper {
+  transform: translate(0, -50%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.logo {
+  width: 120px;
+  object-fit: cover;
+}
+
+.arrowLine {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.arrowLine :first-child {
+  transform: rotate(180deg);
+}
+
+.arrowLine > img {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.popSugar {
+  width: unset;
+  height: 16px;
+}
+
+.wellGood {
+  width: 114px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    margin: 70px 0 0;
+    padding: 0;
+  }
+
+
+  .content {
+    position: relative;
+    width: 100%;
+    background: #F8F3F0;
+    height: 230px;
+    padding: 56px 120px 36px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    margin: 0 16px;
+    font-size: 14px;
+    background: #fff;
+    padding: 24px 32px;
+    height: unset;
+    min-height: 120px;
+  }
+
+  .arrowLine {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+  }
+
+  .wellGood {
+    width: 140px;
+  }
+}

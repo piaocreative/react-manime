@@ -1,0 +1,84 @@
+.redeemLine {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding-left: 15px;
+  margin: 20px 0 16px;
+}
+
+.creditLabel {
+  flex-grow: 1;
+  font-size: 14px;
+  background: #f5ded1;
+  height: 48px;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* letter-spacing: -0.4px; */
+}
+
+.creditsText {
+  font-size: 12px;
+  /* max-width: 200px; */
+}
+
+.buttonWrapper {
+  display: grid;
+  background-color: #f5ded1;
+  height: 48px;
+}
+
+.redeemButton {
+  width: 88px;
+  height: 28px;
+  margin-right: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #2C4349;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.undoButton {
+  background-color: #fff !important;
+}
+
+.dollarIcon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.whiteBox {
+  background: #fff;
+  padding-top: 32px;
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.redeemDuringCheckout {
+  position: relative;
+  font-size: 12px;
+  margin: 12px 0;
+}
+
+@media (min-width: 400px) {
+  .redeemDuringCheckout {
+    font-size: 14px;
+  }
+  .creditsText {
+    font-size: 14px;
+    max-width: unset;
+  }
+  .creditLabel {
+    letter-spacing: 0;
+  }
+}
+

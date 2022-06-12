@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  margin: 16px;
+  padding: 16px;
+  border: 2px solid transparent;
+}
+
+.defaultBorder {
+  border: 2px solid #F7BFA0;
+}
+
+.deliverButton {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.defaultLabel {
+  position: absolute;
+  top: 16px;
+  right: -16px;
+  height: 26px;
+  font-size: 14px;
+  padding: 4px;
+  background: #F7BFA0;
+}
+
+.editRemoveRow {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionButton {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #979797;
+}
+
+.actionButton:hover {
+  color: #2C4349;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: calc(50% - 32px);
+  }
+}

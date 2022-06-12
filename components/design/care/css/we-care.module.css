@@ -1,0 +1,75 @@
+.root {
+  position: relative;
+  padding: 0 12px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 16px 60px;
+  min-height: 300px;
+  background: #f5efe7;
+  overflow-x: auto;
+  overscroll-behavior-y: auto;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  top: 20px;
+  font-size: 20px;
+  font-family: 'avenirMedium';
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+.oneNail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 160px;
+  min-width: 136px;
+}
+
+.nailTitle {
+  transform: scale(1.2);
+}
+
+.textPanel {
+  position: absolute;
+  text-align: center;
+  top: 130px;
+  font-size: 14px;
+}
+
+.designerName {
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.nailImage {
+  position: absolute;
+  top: 16px;
+  width: 60px;
+}
+
+@media (min-width: 768px) {
+  .root {
+    padding: 0 12px;
+  }
+
+  .container {
+    padding: 90px 80px 60px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

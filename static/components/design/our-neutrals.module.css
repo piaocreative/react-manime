@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.redContainer {
+  margin-top: -20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'avenirHeavy';
+  letter-spacing: 2px;
+  margin: 20px 0 12px;
+}
+
+.bubbleList {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 10px;
+  overflow-y: auto;
+}
+
+.oneItem {
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bubble {
+  cursor: pointer;
+  width: 37px;
+  height: 53px;
+}
+
+.productName {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+  max-width: 40px;
+}
+
+.longProductName {
+  width: 60px;
+  max-width: 60px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .redContainer {
+    margin-top: -20px;
+  }
+
+  .title {
+    margin: 32px 0;
+    font-size: 18px;
+  }
+
+  .oneItem {
+    padding: 0 50px;
+  }
+
+  .bubble {
+    width: 46px;
+    height: 66px;
+  }
+
+  .productName {
+    font-size: 14px;
+    max-width: 60px;
+  }
+
+  .longProductName {
+    width: 80px;
+    max-width: 80px;
+  }
+
+  .bubbleList {
+    justify-content: center;
+  }
+}

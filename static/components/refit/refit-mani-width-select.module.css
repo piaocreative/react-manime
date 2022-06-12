@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  flex-grow: 1;
+}
+
+.adjustAllButton {
+  margin-top: 4px;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+
+.actionButton {
+  width: 100%;
+  margin-top: auto;
+}
+
+.imageContainer {
+  /* margin: auto 0; */
+  width: calc(100% + 48px);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.imagePanel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 12px;
+}
+
+.alignRight {
+  justify-content: flex-end;
+  transform: rotate(45deg);
+  transform-origin: center right;
+  margin-right: -12px;
+}
+
+.alignRight > div {
+  transform-origin: right;
+}
+
+.alignLeft {
+  justify-content: flex-start;
+  transform: rotate(-45deg);
+  transform-origin: center left;
+  margin-left: -12px;
+}
+
+.alignLeft > div {
+  transform-origin: left;
+}
+
+.handCanvas {
+  position: relative;
+  min-height: 159px;
+}
+
+.buttonLine {
+  position: fixed;
+  bottom: 20px;
+  z-index: 10;
+  width: calc(100% - 80px);
+}
+
+@media (min-width: 414px) {
+  .handCanvas {
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .fingerImage {
+    min-height: 360px;
+  }
+
+  .handCanvas {
+    transform: scale(1.4);
+  }
+
+  .alignRight {
+    margin-bottom: 20px;
+  }
+
+  .buttonLine {
+    position: unset;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .adjustAllButton {
+    margin-bottom: 120px;
+  }
+}

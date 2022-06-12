@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+          <circle
+            fill="#d35151"
+            strokeWidth="1"
+            stroke='ghostwhite'
+            cx="25"
+            cy="25"
+            r="23"
+          />
+
+          <path
+            fill="none"
+            strokeWidth="2"
+            stroke="ghostwhite"
+            d="M17,17 L33,33"
+
+          />
+          <path
+            fill="none"
+            strokeWidth="2"
+            stroke="ghostwhite"
+            d="M33,17 L17,33"
+  />
+    
+</svg>

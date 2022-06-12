@@ -1,0 +1,17 @@
+.mainFitContainer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0px 10px;
+}
+
+@media (min-width: 768px) {
+    .mainFitContainer {
+        padding: 0px;
+    }
+}
+
+.mobileFitContainer {
+    margin-top: 20px;
+    min-height: calc(var(--vh, 1vh) * 100 - 20px);
+}

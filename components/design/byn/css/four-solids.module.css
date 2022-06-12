@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  padding: 0 12px;
+}
+
+.bubblePanel {
+  padding-top: 0;
+}
+
+.bubblePanelTitle {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: avenirHeavy;
+}
+
+.bubbleList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  margin-top: 20px;
+}
+
+.bubbleItem {
+  display: grid;
+  place-items: center;
+  margin-bottom: 32px;
+}
+
+.bubble {
+  cursor: pointer;
+  width: 37px;
+  height: 53px;
+}
+
+.bubbleLabel {
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .bubblePanel {
+    padding-top: 0;
+  }
+
+  .bubblePanelTitle {
+    letter-spacing: 4px;
+    font-size: 18px;
+  }
+
+  .bubbleList {
+    max-width: 480px;
+    margin: 32px auto 12px;
+  }
+
+  .bubble {
+    width: 46px;
+    height: 66px;
+  }
+
+  .bubbleLabel {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,18 @@
+.collapse {
+  /* border: 1px solid rgba(3, 169, 244, 0.3);
+  border-radius: 10px;
+  background-color: rgba(100, 255, 100, 0.1); */
+  transition: height 200ms; 
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.firstButton {
+  margin-top: 18px;
+}
+
+.inviteIcon {
+  width: 22px;
+}

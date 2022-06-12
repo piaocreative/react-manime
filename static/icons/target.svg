@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.168" height="45.168" viewBox="0 0 45.168 45.168">
+  <g id="Group_7" data-name="Group 7" transform="translate(0.5)">
+    <path id="Line_3" data-name="Line 3" d="M0,.5H44.168" transform="translate(0 22.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Line_3-2" data-name="Line 3" d="M0,.5H44.168" transform="translate(23 0.5) rotate(90)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Oval" cx="16" cy="16" r="16" transform="translate(6.5 7)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="Oval-2" data-name="Oval" cx="6" cy="6" r="6" transform="translate(16.5 17)" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

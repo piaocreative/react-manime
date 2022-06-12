@@ -1,0 +1,245 @@
+.outlinedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F7BFA0;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #F7BFA0;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: transparent;
+  outline: none;
+}
+
+.outlinedButton:hover {
+  background-color: #F7BFA0;
+  transition: ease-out 0.3s;
+  color: white;
+  outline: none;
+}
+
+.outlinedButton:focus {
+  outline: none;
+}
+
+.outlinedDarkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #213439;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #213439;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: transparent;
+}
+
+.outlinedDarkButton:hover {
+  background-color: #F8F1ED;
+  transition: ease-out 0.3s;
+  color:#213439;
+  outline: none;
+}
+
+.outlinedDarkButton:focus {
+  outline: none;
+}
+
+.grayButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #213439;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #F8F1ED;
+}
+
+.grayButton:hover {
+  background-color: #f7bfa040;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.grayButton:focus {
+  outline: none;
+}
+
+.primaryButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #F7BFA0;
+  font-family: avenirMedium;
+}
+
+.primaryButton:hover {
+  background-color: #fab28c;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.primaryButton:disabled {
+  background-color: #aaa;
+}
+
+/* .primaryButton:disabled:hover {
+  cursor: not-allowed;
+} */
+
+.primaryButton:focus {
+  outline: none;
+}
+
+.whiteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C4349;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #2C4349;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #fff;
+  outline: none;
+}
+
+.whiteButton:disabled {
+  background-color: #aaa;
+}
+
+.whiteButton:hover {
+  background-color: #fdefe7;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.whiteButton:focus {
+  outline: none;
+}
+
+.darkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: avenirMedium;
+  border: none;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #2C4349;
+}
+.darkButton:focus {
+  outline: none;
+}
+.darkButton:hover {
+  background-color: #35535b;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.darkButton:disabled {
+  background-color: #aaa;
+}
+
+.darkButton2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #213439;
+  border-radius: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: avenirMedium;
+  border: none;
+  white-space: nowrap;
+  padding: 0px 20px;
+  height: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #F7BFA0;
+}
+
+.darkButton2:hover {
+  background-color: #2C4147;
+  color: #F7BFA0;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.smallHeightButton {
+  height: 32px;
+}
+
+.glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 150%;
+  width: 200%;
+  height: 100%;
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  transition: background 0.4s ease 0s;
+  background-image: linear-gradient(to right, transparent, rgba(255,255,255,0.25), transparent);
+}
+
+.whiteGlow:after {
+  background-image: linear-gradient(to right, transparent, rgba(247,191,160,0.25), transparent);
+}
+
+.glow:hover {
+  transition-delay: 0.25s;
+}
+
+.glow:hover:after {
+  animation: shine 0.75s cubic-bezier(0.01, 0.56, 1, 1);
+}
+
+@keyframes shine {
+	0% {left: 200%;}
+	100% {left: -200%;}
+}

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px 0 20px;
+  padding: 20px;
+}
+
+.textPanel {
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+}
+
+.imagePanel {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1028px) {
+  .container {
+    margin: 70px 0 20px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .textPanel {
+    text-align: left;
+    font-size: 17px;
+    width: 50%;
+  }
+
+  .imagePanel {
+    width: 40%;
+    margin-bottom: unset;
+  }
+}

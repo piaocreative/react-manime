@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 16px;
+  background: #FFE1CF;
+  min-height: 60vh;
+}
+
+.textPanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePanel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
+}
+
+.cameraGirl {
+  height: calc(100% - 40px);
+  z-index: 1;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  padding: 16px 0;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  color: #2C4349;
+}
+
+.description {
+  text-align: center;
+  max-width: 100%;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  color: #2C4349;
+}
+
+.orangeBubble {
+  position: absolute;
+  display: none;
+  right: -40%;
+}
+
+.whiteBubble {
+  position: absolute;
+  height: 95%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 70px;
+    flex-direction: row;
+  }
+
+  .textPanel {
+    width: 50%;
+    padding-left: 10%;
+  }
+
+  .imagePanel {
+    width: 50%;
+    height: unset;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-top: 0px;
+    color: white;
+  }
+
+  .description {
+    max-width: 60%;
+  }
+
+  .orangeBubble {
+    display: block;
+    height: 150%;
+    bottom: -10%;
+  }
+
+  .whiteBubble {
+    display: none;
+  }
+
+  .actionButton {
+    background-color: white;
+    color: #f7bfa0;
+  }
+}

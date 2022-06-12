@@ -1,0 +1,162 @@
+.collapse {
+  transition: height 200ms; 
+}
+
+.content {
+  padding: 12px;
+  font-size: 14px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  background: #f7bfa0;
+  padding: 24px;
+}
+
+.title {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.landingTitle {
+  color: #2c4349;
+  font-family: 'avenirHeavy';
+}
+
+.faqContainer {
+  width: 100%;
+  background: #f7bfa0;
+}
+
+.landingContainer {
+  background: #f8f3f0;
+  margin: 40px;
+}
+
+.landingFaqContainer {
+  background: #f8f3f0;
+}
+
+.topBorder {
+  border-top-width: 2px;
+}
+
+.bottomBorder {
+  border-bottom-width: 2px;
+} 
+
+.underline {
+  text-decoration: underline;
+}
+
+.question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #fff;
+  font-size: 13px;
+  margin-bottom: -1px;
+}
+
+.landingQuestion {
+  border-color: #f7bfa0
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.titlePanel {
+  display: none;
+}
+
+.moreQuestions {
+  font-size: 13px;
+  margin-top: 16px;
+  letter-spacing: 0px;
+}
+
+.landingMoreQuestions {
+  text-align: center;
+}
+
+.expandLabel {
+  color: #fff;
+  font-size: 16px;
+  width: 16px;
+  text-align: center;
+}
+
+.landingExpandLabel {
+  color: #f7bfa0;
+}
+
+.mobileView {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: unset;
+    margin-top: 64px;
+    flex-direction: row;
+    background: transparent;
+  }
+
+  .faqContainer {
+    background: #fef7f3;
+    padding: 30px 40px;
+    margin: 20px 0 20px -40px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: unset;
+  }
+
+  .question {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #f7bfa0;
+    font-size: 14px;
+  }
+
+  .titlePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background: #f7bfa0;
+    text-align: center;
+  }
+
+  .moreQuestions {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .expandLabel {
+    color: #f7bfa0;
+  }
+
+  .mobileView {
+    display: none;
+  }
+
+  .landingContainer {
+    margin: 70px 0;
+  }
+}

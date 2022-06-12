@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 50px;
+}
+
+.shareButton {
+  cursor: pointer;
+  margin-right: 20px;
+  outline: none;
+}

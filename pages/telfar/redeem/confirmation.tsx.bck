@@ -1,0 +1,10 @@
+import Banner from 'components/gift/group/redeem/confirmation/Banner'
+import NextStep from 'components/gift/group/redeem/confirmation/NextStep'
+export default function Confirmation(props){
+  return (
+    <div>
+      <Banner />
+      <NextStep />
+    </div>
+  )
+}

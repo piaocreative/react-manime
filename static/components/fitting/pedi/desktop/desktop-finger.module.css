@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: -140px 10px 0;
+}
+
+.title {
+  color: #fff;
+  opacity: 0.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.activeTitle {
+  color: #F7BFA0;
+  opacity: 1;
+}
+
+.panel {
+  position: relative;
+  margin-top: 32px;
+  background-color: #FCF9F7;
+  padding: 30px 14px 60px;
+}
+
+.activePanel {
+  background-color: #FFECE1;
+}
+
+.panelTitle {
+  text-align: center;
+}
+
+.proTipsPanel {
+  background-color: #fff;
+  padding: 12px 10px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  min-height: 77px;
+}
+
+.proTipsTitle {
+  text-align: center;
+}
+
+.proTipsDescription {
+  text-align: left;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 178%; /* 9:16 Aspect Ratio */
+}
+
+.gifImage {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* height: calc(100vh - 600px); */
+  object-fit: cover;
+}
+
+.uploadButton {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.retakeButtonReal {
+  margin-top: 8px;
+  width: calc(50% - 10px);
+  margin-right: calc(50% + 10px);
+}
+
+.errorRetakeButtonReal {
+  margin-top: 8px;
+  width: calc(50% - 10px);
+  margin-left: calc(50% + 10px);
+}
+
+.bubbleIcon {
+  width: 36px;
+  margin: 4px auto -48px;
+  z-index: 10;
+}
+
+.currentStep {
+  text-align: center;
+  z-index: 20;
+  font-size: 20px;
+  font-family: 'avenirBlack';
+  height: 0;
+  margin-top: 12px;
+  margin-bottom: -12px;
+}
+
+.highLight {
+  font-family: 'avenirBlack';
+  color: #F7BFA0;
+  letter-spacing: -0.4px;
+}
+
+.retakePictureBox {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  /* max-width: 480px; */
+  height: 176px;
+  background-color: #FFF9F7E0;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.1);
+}
+
+.retakePicturePanel {
+  padding: 28px 14px 0;
+  height: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.retakeActionLine {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.retakeButton {
+  width: 48%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #2C4349;
+  color: #2C4349;
+  text-align: center;
+  bottom: 40px;
+}
+
+.continueButton {
+  width: 48%;
+  height: 40px;
+}
+
+
+@media(max-width: 1522px) {
+  .proTipsPanel {
+    min-height: 96px;
+  }
+}
+
+@media(max-width: 1510px) {
+  .proTipsPanel {
+    min-height: 114px;
+  }
+}

@@ -1,0 +1,15 @@
+<svg id="Component_13_1" data-name="Component 13 – 1" xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152">
+  <g id="Ellipse_28" data-name="Ellipse 28" fill="#FBF9F7" stroke="silver" stroke-width="1">
+    <circle cx="76" cy="76" r="76" stroke="none"/>
+    <circle cx="76" cy="76" r="75.5" fill="none"/>
+  </g>
+  <g id="truck-icon" transform="translate(21.5 11.352)">
+    <path id="Path_184" data-name="Path 184" d="M72.575,51.4H62.944a.262.262,0,0,0-.244.244v9.266a.262.262,0,0,0,.244.244H81.353c.122,0,.122,0,.244-.122a.426.426,0,0,0,.122-.244c0-.122,0-.122-.122-.244L72.819,51.4Z" transform="translate(12.097 2.191)" fill="none" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_185" data-name="Path 185" d="M79.089,73.4a4.389,4.389,0,1,0,4.389,4.389A4.371,4.371,0,0,0,79.089,73.4Zm0,8.168a3.8,3.8,0,0,1-3.779-3.779h0a3.779,3.779,0,1,1,3.779,3.779Z" transform="translate(14.727 7.013)" fill="#2c4349"/>
+    <path id="Path_186" data-name="Path 186" d="M79.746,70.4a8.046,8.046,0,1,0,8.046,8.046A8.039,8.039,0,0,0,79.746,70.4Z" transform="translate(14.069 6.355)" fill="none" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_187" data-name="Path 187" d="M25.989,73.4a4.389,4.389,0,1,0,4.389,4.389A4.371,4.371,0,0,0,25.989,73.4Zm0,8.168a3.8,3.8,0,0,1-3.779-3.779h0a3.779,3.779,0,1,1,3.779,3.779Z" transform="translate(3.09 7.013)" fill="#2c4349"/>
+    <path id="Path_188" data-name="Path 188" d="M26.646,70.4a8.046,8.046,0,1,0,8.046,8.046A8.039,8.039,0,0,0,26.646,70.4Z" transform="translate(2.433 6.355)" fill="none" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_189" data-name="Path 189" d="M22.5,77.487a9.839,9.839,0,0,1,13.9.731,9.564,9.564,0,0,1,2.56,5.486.262.262,0,0,0,.244.244H83.819a.262.262,0,0,0,.244-.244,9.222,9.222,0,0,1,2.56-5.486l.731-.731a9.76,9.76,0,0,1,13.9.731,9.564,9.564,0,0,1,2.56,5.486.262.262,0,0,0,.244.244h4.023a3.123,3.123,0,0,0,3.048-3.17v-6.1a6.39,6.39,0,0,0-3.292-5.242l-8.046-4.267-11.582-12.8a5.84,5.84,0,0,0-4.267-1.951h-.122l-6.461-7.8A3.457,3.457,0,0,0,74.675,41.4H7.744a.262.262,0,0,0-.244.244V80.535a3.408,3.408,0,0,0,3.414,3.414h8.168a.262.262,0,0,0,.244-.244,9.222,9.222,0,0,1,2.56-5.486C22.008,77.853,22.252,77.731,22.5,77.487Z" transform="translate(0)" fill="none" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+    <line id="Line_5" data-name="Line 5" y2="42.548" transform="translate(68.214 41.4)" fill="none" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+.doneButton {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 112px);
+  flex-direction: column;
+  align-items: center;
+  background: #FEF7F3;
+  color: #213439;
+}
+
+.actionButton {
+  width: 100%;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-height: calc(100vh - 150px);
+  }
+}

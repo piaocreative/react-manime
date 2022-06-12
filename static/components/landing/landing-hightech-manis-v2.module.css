@@ -1,0 +1,101 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  width: 100%;
+  min-height: max(70vh, 470px);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fef4f2;
+  overflow: hidden;
+}
+
+.textPanel {
+  margin-top: 32px;
+  width: 300px;
+  z-index: 1;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 2px;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.getManiButton {
+  min-width: 160px;
+  margin: 0 auto;
+}
+
+.videoStyle {
+  width: 100%;
+  object-fit: cover;
+  margin-top: -220px;
+  background-color: #fef4f2;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    margin-top: 70px;
+    padding: 0;
+    height: 50vh;
+    min-height: 580px;
+  }
+
+  .textPanel {
+    position: absolute;
+    left: 0;
+    margin-top: unset;
+    margin-left: 40px;
+    width: 320px;
+  }
+
+  .title {
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 44px;
+  }
+
+  .description {
+    margin-top: 18px;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .videoStyle {
+    margin-top: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .videoStyle {
+    object-fit: contain;
+    object-position: bottom right;
+  }
+
+  .textPanel {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .videoStyle {
+    object-fit: contain;
+    object-position: bottom right;
+    margin: 0 auto;
+    height: 100%;
+    width: unset;
+  }
+}

@@ -1,0 +1,145 @@
+
+
+.navBarContainer {
+  background-color: #fbf7f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.navBar {
+  margin-top: 39px;
+  width: 1140px;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBarLeft {
+}
+
+.ManiMe {
+  width: 221px;
+  height: 47px;
+  object-fit: contain;
+}
+
+.navBarRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navBarSectionLinkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  margin-right: 40px;
+  letter-spacing: 1px;
+}
+
+.navBarSectionLink {
+  white-space: nowrap;
+  font-family: avenirBook;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 2px;
+  text-align: right;
+  /* color: #525050; */
+}
+
+.showRoomLink {
+  position: relative;
+}
+
+.voteNow {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  width: 100%;
+  color: #F7BFA0;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.buttonOutline {
+  margin-left: 25px;
+  width: 105px;
+  height: 48px;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: solid 2px #e8483f;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  color: #e8483f;
+  background-color: transparent;
+}
+
+.button {
+  margin-left: 25px;
+  width: 179px;
+  height: 48px;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: solid 2px #e8483f;
+  background-color: #e8483f;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+@media (max-width: 1250px) {
+  .navBarContainer {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .navBarSectionLinkContainer {
+    width: 300px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navBarSectionLinkContainer {
+    display: none;
+  }
+  .ManiMe {
+    width: 165.75px;
+    height: 35.25px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 767px) {
+  .navBarSectionLinkContainer {
+    display: none;
+  }
+  .buttonOutline {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .voteNow {
+    top: 16px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,9 @@
+.boldLabel {
+  font-family: avenirHeavy;
+}
+
+.description {
+  text-align: center;
+  font-size: 13px;
+  max-width: 402px;
+}

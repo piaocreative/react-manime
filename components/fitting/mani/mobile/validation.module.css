@@ -1,0 +1,96 @@
+.container {
+  display: grid;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  background: #fdf3ed;
+  padding: 20px 12px 80px;
+  grid-gap: 16px;
+}
+
+.mainTitle {
+  font-family: 'avenirHeavy';
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.mainDescription {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 6px;
+  width: 100%;
+}
+
+.oneItem {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  grid-gap: 16px;
+  background: #fff;
+  padding: 16px;
+}
+
+.subTitle {
+  font-size: 14px;
+  font-family: avenirHeavy;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.imagePanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.nailPanel {
+  position: relative;
+  width: 100%;
+}
+
+.nailStyle {
+  min-height: 200px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tipStyle {
+  position: absolute;
+  top: 12px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  background: #000;
+  opacity: 0.17;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 10px;
+  font-family: avenirHeavy;
+  text-transform: uppercase;
+}
+
+.retakeButton {
+  width: 100%;
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+
+.fingerTitle {
+  font-family: 'avenirMedium';
+  text-align: center;
+  padding: 12px 0 8px;
+}
+
+.submitButton {
+  position: fixed;
+  bottom: 32px;
+  left: 44px;
+  width: calc(100% - 88px);
+  margin: 0 auto;
+  text-transform: uppercase;
+}

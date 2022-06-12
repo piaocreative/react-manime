@@ -1,0 +1,81 @@
+.container {
+  margin-top: 40px;
+  width: 100%;
+  height: calc(100vh - 180px);
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/on-the-go-mobile-v2.jpg?v=1598813129);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.textPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  margin: 36px auto;
+}
+
+.title {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    margin-top: 70px;
+    min-height: 60vh;
+    height: unset;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/on-the-go-desktop-v2.jpg?v=1598813130);
+    background-position: unset;
+  }
+
+  .textPanel {
+    justify-content: center;
+    width: 310px;
+    margin-right: 176px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .description {
+    font-size: 16px;
+    width: 294px;
+    margin-bottom: 48px;
+  }  
+}
+
+@media (min-width: 1400px) {
+  .container {
+    min-height: max(68vh, 560px);
+    background-position: bottom;
+  }
+  .textPanel {
+    margin-right: calc(25% - 160px);
+  }
+}

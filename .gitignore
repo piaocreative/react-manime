@@ -1,0 +1,16 @@
+.history/
+.DS_Store
+.env copy
+.env*
+.next/
+.vscode/settings.json
+*.log
+components/fitting/FittingCam/indexcopy.tsx
+ManiMePG.session.sql
+node_modules/
+npm-debug.log
+pages/test.js
+pages/tests/
+static/data
+temp
+temp2

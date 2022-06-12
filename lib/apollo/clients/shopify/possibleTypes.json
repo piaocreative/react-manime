@@ -1,0 +1,1323 @@
+{
+  "__schema": {
+        "types": [
+          {
+            "name": "ApiVersion",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "AppliedGiftCard",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Article",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ArticleAuthor",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ArticleConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ArticleEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ArticleSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Attribute",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "AttributeInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "AutomaticDiscountApplication",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "AvailableShippingRates",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Blog",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "BlogConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "BlogEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "BlogSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Boolean",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CardBrand",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Checkout",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutAttributesUpdateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutAttributesUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutAttributesUpdateV2Input",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutAttributesUpdateV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCompleteFreePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCompleteWithCreditCardPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCompleteWithCreditCardV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCompleteWithTokenizedPaymentPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCompleteWithTokenizedPaymentV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCreateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCreatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCustomerAssociatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCustomerAssociateV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCustomerDisassociatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutCustomerDisassociateV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutDiscountCodeApplyPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutDiscountCodeApplyV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutDiscountCodeRemovePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutEmailUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutEmailUpdateV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutErrorCode",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutGiftCardApplyPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutGiftCardRemovePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutGiftCardRemoveV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutGiftCardsAppendPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItem",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemUpdateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemsAddPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemsRemovePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemsReplacePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutLineItemsUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutShippingAddressUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutShippingAddressUpdateV2Payload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutShippingLineUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CheckoutUserError",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Collection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CollectionConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CollectionEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CollectionSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Comment",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CommentAuthor",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CommentConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CommentEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CountryCode",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CreditCard",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CreditCardPaymentInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CreditCardPaymentInputV2",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CropRegion",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CurrencyCode",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Customer",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAccessToken",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAccessTokenCreateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAccessTokenCreatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAccessTokenDeletePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAccessTokenRenewPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerActivateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerActivatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAddressCreatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAddressDeletePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerAddressUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerCreateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerCreatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerDefaultAddressUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerErrorCode",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerRecoverPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerResetByUrlPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerResetInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerResetPayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerUpdateInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerUpdatePayload",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "CustomerUserError",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DateTime",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Decimal",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DigitalWallet",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountAllocation",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountApplication",
+            "kind": "INTERFACE",
+            "possibleTypes": [
+              {
+                "name": "AutomaticDiscountApplication",
+                "description": "Automatic discount applications capture the intentions of a discount that was automatically applied.\n",
+                "__typename": "__Type"
+              },
+              {
+                "name": "DiscountCodeApplication",
+                "description": "Discount code applications capture the intentions of a discount code at\nthe time that it is applied.\n",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ManualDiscountApplication",
+                "description": "Manual discount applications capture the intentions of a discount that was manually created.\n",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ScriptDiscountApplication",
+                "description": "Script discount applications capture the intentions of a discount that\nwas created by a Shopify Script.\n",
+                "__typename": "__Type"
+              }
+            ],
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountApplicationAllocationMethod",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountApplicationConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountApplicationEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountApplicationTargetSelection",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountApplicationTargetType",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DiscountCodeApplication",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "DisplayableError",
+            "kind": "INTERFACE",
+            "possibleTypes": [
+              {
+                "name": "CheckoutUserError",
+                "description": "Represents an error that happens during execution of a checkout mutation.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "CustomerUserError",
+                "description": "Represents an error that happens during execution of a customer mutation.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "UserError",
+                "description": "Represents an error in the input of a mutation.",
+                "__typename": "__Type"
+              }
+            ],
+            "__typename": "__Type"
+          },
+          {
+            "name": "Domain",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Float",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Fulfillment",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "FulfillmentLineItem",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "FulfillmentLineItemConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "FulfillmentLineItemEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "FulfillmentTrackingInfo",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "HTML",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "HasMetafields",
+            "kind": "INTERFACE",
+            "possibleTypes": [
+              {
+                "name": "Product",
+                "description": "A product represents an individual item for sale in a Shopify store. Products are often physical, but they don't have to be.\nFor example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty).",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ProductVariant",
+                "description": "A product variant represents a different version of a product, such as differing sizes or differing colors.",
+                "__typename": "__Type"
+              }
+            ],
+            "__typename": "__Type"
+          },
+          {
+            "name": "ID",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Image",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ImageConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ImageContentType",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ImageEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Int",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MailingAddress",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MailingAddressConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MailingAddressEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MailingAddressInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ManualDiscountApplication",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Metafield",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MetafieldConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MetafieldEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MetafieldParentResource",
+            "kind": "UNION",
+            "possibleTypes": [
+              {
+                "name": "Product",
+                "description": "A product represents an individual item for sale in a Shopify store. Products are often physical, but they don't have to be.\nFor example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty).",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ProductVariant",
+                "description": "A product variant represents a different version of a product, such as differing sizes or differing colors.",
+                "__typename": "__Type"
+              }
+            ],
+            "__typename": "__Type"
+          },
+          {
+            "name": "MetafieldValueType",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Money",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MoneyInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "MoneyV2",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Mutation",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Node",
+            "kind": "INTERFACE",
+            "possibleTypes": [
+              {
+                "name": "AppliedGiftCard",
+                "description": "Details about the gift card used on the checkout.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Article",
+                "description": "An article in an online store blog.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Blog",
+                "description": "An online store blog.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Checkout",
+                "description": "A container for all the information required to checkout items and pay.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "CheckoutLineItem",
+                "description": "A single line item in the checkout, grouped by variant and attributes.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Collection",
+                "description": "A collection represents a grouping of products that a shop owner can create to organize them or make their shops easier to browse.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Comment",
+                "description": "A comment on an article.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "MailingAddress",
+                "description": "Represents a mailing address for customers and shipping.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Metafield",
+                "description": "Metafields represent custom metadata attached to a resource. Metafields can be sorted into namespaces and are\ncomprised of keys, values, and value types.\n",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Order",
+                "description": "An order is a customer’s completed request to purchase one or more products from a shop. An order is created when a customer completes the checkout process, during which time they provides an email address, billing address and payment information.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Page",
+                "description": "Shopify merchants can create pages to hold static HTML content. Each Page object represents a custom page on the online store.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Payment",
+                "description": "A payment applied to a checkout.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "Product",
+                "description": "A product represents an individual item for sale in a Shopify store. Products are often physical, but they don't have to be.\nFor example, a digital download (such as a movie, music or ebook file) also qualifies as a product, as do services (such as equipment rental, work for hire, customization of another product or an extended warranty).",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ProductOption",
+                "description": "Custom product property names like \"Size\", \"Color\", and \"Material\".\nProducts are based on permutations of these options.\nA product may have a maximum of 3 options.\n255 characters limit each.\n",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ProductVariant",
+                "description": "A product variant represents a different version of a product, such as differing sizes or differing colors.",
+                "__typename": "__Type"
+              },
+              {
+                "name": "ShopPolicy",
+                "description": "Policy that a merchant has configured for their store, such as their refund or privacy policy.",
+                "__typename": "__Type"
+              }
+            ],
+            "__typename": "__Type"
+          },
+          {
+            "name": "Order",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "OrderConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "OrderEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "OrderLineItem",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "OrderLineItemConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "OrderLineItemEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "OrderSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Page",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PageConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PageEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PageInfo",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PageSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Payment",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PaymentSettings",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PricingPercentageValue",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "PricingValue",
+            "kind": "UNION",
+            "possibleTypes": [
+              {
+                "name": "MoneyV2",
+                "description": "A monetary value with currency.\n\nTo format currencies, combine this type's amount and currencyCode fields with your client's locale.\n\nFor example, in JavaScript you could use Intl.NumberFormat:\n\n```js\nnew Intl.NumberFormat(locale, {\n  style: 'currency',\n  currency: currencyCode\n}).format(amount);\n```\n\nOther formatting libraries include:\n\n* iOS - [NumberFormatter](https://developer.apple.com/documentation/foundation/numberformatter)\n* Android - [NumberFormat](https://developer.android.com/reference/java/text/NumberFormat.html)\n* PHP - [NumberFormatter](http://php.net/manual/en/class.numberformatter.php)\n\nFor a more general solution, the [Unicode CLDR number formatting database] is available with many implementations\n(such as [TwitterCldr](https://github.com/twitter/twitter-cldr-rb)).\n",
+                "__typename": "__Type"
+              },
+              {
+                "name": "PricingPercentageValue",
+                "description": "The value of the percentage pricing object.",
+                "__typename": "__Type"
+              }
+            ],
+            "__typename": "__Type"
+          },
+          {
+            "name": "Product",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductCollectionSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductImageSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductOption",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductPriceRange",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductPriceRangeConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductPriceRangeEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariant",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariantConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariantEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariantPricePair",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariantPricePairConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariantPricePairEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ProductVariantSortKeys",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "QueryRoot",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "SEO",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ScriptDiscountApplication",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "SelectedOption",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "SelectedOptionInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ShippingRate",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Shop",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "ShopPolicy",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "String",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "StringConnection",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "StringEdge",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "TokenizedPaymentInput",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "TokenizedPaymentInputV2",
+            "kind": "INPUT_OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "Transaction",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "TransactionKind",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "TransactionStatus",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "URL",
+            "kind": "SCALAR",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "UserError",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "WeightUnit",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__Directive",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__DirectiveLocation",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__EnumValue",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__Field",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__InputValue",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__Schema",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__Type",
+            "kind": "OBJECT",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          },
+          {
+            "name": "__TypeKind",
+            "kind": "ENUM",
+            "possibleTypes": null,
+            "__typename": "__Type"
+          }
+        ],
+        "__typename": "__Schema"
+      }
+    }
+

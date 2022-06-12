@@ -1,0 +1,12 @@
+.inputError {
+  margin-top: -18px;
+  height: auto;
+  left: 10px;
+  font-size: 13px;
+  color: #FF8181; 
+}
+
+.inputError p{
+  margin: 0;
+  color: #FF8181; 
+}

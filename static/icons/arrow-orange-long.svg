@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.957" height="14.707" viewBox="0 0 37.957 14.707">
+  <g transform="translate(-0.75 0.354)">
+    <path d="M.5,1H37" transform="translate(0.75 6)" fill="none" stroke="#f7bfa0" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+    <path d="M-7,0,0,7l-7,7" transform="translate(38)" fill="none" stroke="#f7bfa0" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

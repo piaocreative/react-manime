@@ -1,0 +1,135 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.howToApplytitle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: grid;
+  place-items: center;
+  /* margin-bottom: -100%; */
+  font-size: 13px;
+  font-family: avenirHeavy;
+  letter-spacing: 1px;
+  height: 28px;
+  padding: 2px 16px 0;
+  background-color: #2c4349;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.bannerImage {
+  object-fit: contain;
+  width: 100%;
+  min-height: 160px;
+}
+
+.texts {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  min-width: 240px;
+  margin-bottom: 12px;
+}
+
+.watchLabel {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.playIcon {
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.playerWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 22px;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+  width: 100%;
+  z-index: 100;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  top: 8px;
+  right: 20px;
+  color: #f7bfa0;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .howToApplytitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    height: 28px;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: unset;
+    min-width: unset;
+  }
+
+  .watchLabel {
+    font-size: 16px;
+  }
+
+  .bannerImage {
+    object-fit: cover;
+  }
+
+  .playerWrapper {
+    width: 60%;
+    /* margin-left: 20%; */
+    margin-bottom: 48px;
+    padding-top: 33.71%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bannerImage {
+    object-fit: contain;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}

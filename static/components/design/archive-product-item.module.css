@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+.archiveImage {
+  margin: 18px 0 12px;
+  width: 100%;
+  max-width: 180px;
+  max-height: 268px;
+  object-fit: cover;
+}
+
+.dateBox {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 32px;
+  background: #fbf7f0;
+  color: #f5bf9f;
+  font-family: avenirHeavy;
+}
+
+.productName {
+  font-size: 14px;
+}
+
+.collectionTitle {
+  font-size: 14px;
+  color: #a3a3a3;
+  margin: 6px 0;
+}
+
+.soldOut {
+  font-size: 14px;
+  color: #ed7658;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.actionButton {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 160px;
+  }
+
+  .productName {
+    font-size: 18px;
+  }
+  
+  .collectionTitle {
+    font-size: 14px;
+  }
+
+  .archiveImage {
+    height: 231px;
+    max-width: unset;
+    max-height: unset;
+  }
+
+}

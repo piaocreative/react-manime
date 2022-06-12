@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.arrowLine {
+  position: absolute;
+  bottom: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20%;
+  width: 100%;
+}
+
+.arrowLine > svg {
+  cursor: pointer;
+  z-index: 1;
+  width: 20px;
+  height: 10px;
+  filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.2));
+}
+
+.bubbleDot {
+  width: 16px;
+  height: 64px;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.2));
+}
+
+.leftArrow {
+  transform: rotate(90deg);
+}
+
+.rightArrow {
+  transform: rotate(-90deg);
+}
+
+.dotsLine {
+  position: relative !important;
+  margin: 0;
+  padding: 0;
+  bottom: 24px;
+  width: 200px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.dotsLine > li {
+  width: 36px !important;
+}
+
+@media (min-width: 768px) {
+  .arrowLine {
+    width: 240px;
+    padding: 0;
+    transform: translate(-50%, 0);
+    left: 50%;
+    z-index: 1;
+    bottom: 36px;
+  }
+
+  .dotsLine {
+    bottom: 36px;
+  }
+}

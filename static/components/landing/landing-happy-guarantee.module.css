@@ -1,0 +1,89 @@
+.container {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  background: #fff2ea;
+}
+
+.textPanel {
+  position: relative;
+  display: grid;
+  place-content: center;
+  width: calc(100% - 40px);
+  padding: 32px;
+  background-color: #fff;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.imagePanel {
+  width: 100%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0253/6561/0605/files/landing-happy-guarantee.jpg?v=1599004350');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  min-height: 240px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.description {
+  text-align: center;
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.happinessMark {
+  position: absolute;
+  bottom: -14px;
+  right: -14px;
+  transform: scale(0.6);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .textPanel {
+    width: 50%;
+    margin: 40px 0 40px 40px;
+  }
+
+  .imagePanel {
+    width: 50%;
+    background-position: center;
+    min-height: 360px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .happinessMark {
+    top: 20px;
+    right: -20px;
+    bottom: unset;
+    transform: scale(1);
+  }
+
+  .mobileOnly {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .imagePanel {
+    min-height: 400px;
+  }
+}

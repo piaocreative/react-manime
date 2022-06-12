@@ -1,0 +1,107 @@
+[
+  {
+    "name_case": "Overview",
+    "class_assrt": "overview__ProfileBox",
+    "req_auth": 1,
+    "url": "/profile/overview",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Orders",
+    "class_assrt": "orders__ProfileContentContainer",
+    "req_auth": 1,
+    "url": "/profile/orders",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Refer friends",
+    "class_assrt": "referral-desktop_container",
+    "req_auth": 1,
+    "url": "/profile/friends",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Gift",
+    "class_assrt": "gift__GiftGiveContainer",
+    "req_auth": 1,
+    "url": "/profile/gift",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Shipping and Payment",
+    "class_assrt": "shipping-payment__ProfileRenderBox",
+    "req_auth": 1,
+    "url": "/profile/shipping-payment",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Change Password",
+    "class_assrt": "change-password__PageBox",
+    "req_auth": 1,
+    "url": "/profile/change-password",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "How to Apply",
+    "class_assrt": "how-to-apply-banner_container",
+    "req_auth": 0,
+    "url": "/how-to-apply",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "How it works",
+    "class_assrt": "howto-apply-video",
+    "req_auth": 0,
+    "url": "/how-it-works",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "About us",
+    "class_assrt": "builder-blocks",
+    "req_auth": 0,
+    "url": "/about-us",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "FAQ",
+    "class_assrt": "eapps-faq-container",
+    "req_auth": 0,
+    "url": "/faq",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Blog",
+    "class_assrt": "builder-block",
+    "req_auth": 0,
+    "url": "/blog",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Care Gift Kit",
+    "class_assrt": "GiftHeader__Container",
+    "req_auth": 0,
+    "url": "/gift/bundle/Care_Gift_Kit",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Deluxe Gift Kit",
+    "class_assrt": "GiftHeader__Container",
+    "req_auth": 0,
+    "url": "/gift/bundle/Deluxe_Gift_Kit",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Gift Card",
+    "class_assrt": "gift",
+    "req_auth": 0,
+    "url": "/gift/card",
+    "validatePostSignin": true
+  },
+  {
+    "name_case": "Friends Gift Kit",
+    "class_assrt": "groupGiftContainer",
+    "req_auth": 1,
+    "url": "/gift/group",
+    "validatePostSignin": false
+  }
+]

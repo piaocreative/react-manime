@@ -1,0 +1,58 @@
+.container {
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  margin: 8px 16px;
+  padding: 12px 20px;
+  border: 2px solid transparent;
+}
+
+.defaultBorder {
+  border: 2px solid #F7BFA0;
+}
+
+.deliverButton {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.checkIcon {
+  margin-top: 4px;
+}
+
+.addressLabel {
+  margin-left: 16px;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+.fullName {
+  font-family: 'avenirBlack';
+}
+
+.editRemoveColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.actionButton {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #979797;
+}
+
+.actionButton:hover {
+  color: #2C4349;
+}
+
+@media (min-width: 768px) {
+  .container {
+    align-items: flex-start;
+  }
+}

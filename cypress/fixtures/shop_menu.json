@@ -1,0 +1,58 @@
+{
+  menu: 'Shop All',
+  submenu: [
+    { title: 'What\'s New' },
+    { title: 'Last Chance' },
+    { title: 'Solid Colors' },
+    { title: 'Essentials' },
+    { title: 'Manis' },
+    { title: 'Pedis' },
+    { title: 'Bundles' },
+    { title: 'Archive' }    
+  ]
+},
+{
+  menu: 'By Designer',
+  submenu: [
+    { title: 'Alicia Torello' },
+    { title: 'Ami Vega' },
+    { title: 'Amy Le' },
+    { title: 'Bana Jarjour' },
+    { title: 'Canishiea J. Sams' },
+    { title: 'Cassandre Marie' },
+    { title: 'Eda Levenson' },
+    { title: 'Hang Nguyen' },
+    { title: 'Isabel May' },
+    { title: 'Jessica Washick' },
+    { title: 'Kia Stewart' },
+    { title: 'Madeline Poole' },
+    { title: 'Mei Kawajiri' },
+    { title: 'Michelle Won' },
+    { title: 'Mimi D' },
+    { title: 'Nailjob' },
+    { title: 'Natalie Pavloski' },
+    { title: 'Pria Bhama' },
+    { title: 'Queenie Nguyen' },
+    { title: 'Spifster' }
+  ]
+},
+{
+  menu: 'By Collection',
+  submenu: [
+      { title: 'Spring Forward' },
+      { title: 'Signature Capsule' },
+      { title: 'BHM' },
+      { title: 'XO Capsule' },
+      { title: 'Remixed' },
+      { title: 'Glow Up' },
+      { title: 'X Fashion' },
+      { title: 'Creepy Capsule' },
+      { title: 'Bare Your Nails' },
+      { title: 'Dreamy Escapes' },
+      { title: 'CARE' },
+      { title: 'In the Air' },
+      { title: '100% MP' },
+      { title: 'Solid Choice' },
+      { title: 'Signatu' }
+  ]
+}

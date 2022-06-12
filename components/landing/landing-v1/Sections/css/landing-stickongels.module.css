@@ -1,0 +1,91 @@
+.container {
+  margin-top: 44px;
+  padding: 0 16px;
+  width: 100%;
+  height: 70vh;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mainImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mobileTextPanel {
+  position: absolute;
+  transform: translate(-50%, 0);
+  top: -10px;
+  left: 50%;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-family: 'avenirHeavy';
+}
+
+.rectPanel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.getManiButton {
+  position: absolute !important;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  left: 50%;
+}
+
+.videoStyle {
+  width: 100%;
+  object-fit: cover;
+  background-color: #f4f4f8;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 70px;
+    padding: 0;
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .rectPanel {
+    width: 400px;
+    height: 120px;
+    background: #fff;
+    margin-right: 10%;
+    right: 0;
+  }
+
+  .mainImage {
+    background-color: #f3f7f8;
+  }
+
+  .mobileTextPanel {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mainImage {
+    object-fit: contain
+  }
+}

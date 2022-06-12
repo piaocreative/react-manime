@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  padding: 0 12px;
+  background-color: #fff;
+}
+
+.timePanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 140px;
+  padding: 18px 32px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/byn-count-down-mobile.jpg?v=1599936500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e7d8d2;
+}
+
+.timePanelTitle {
+  font-size: 12px;
+  font-family: avenirHeavy;
+  letter-spacing: 2px;
+  color: #4e3625;
+  white-space: nowrap;
+}
+
+.countDownBoard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.timeSlot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeDigit {
+  color: #fff;
+  font-size: 40px
+}
+
+.timeUnit {
+  font-size: 12px;
+  color: #4e3625;
+}
+
+.bubblePanel {
+  padding-top: 0;
+}
+
+.bubblePanelTitle {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: avenirHeavy;
+}
+
+.bubbleList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  margin-top: 20px;
+}
+
+.bubbleItem {
+  display: grid;
+  place-items: center;
+  margin-bottom: 32px;
+}
+
+.bubble {
+  cursor: pointer;
+  width: 37px;
+  height: 53px;
+}
+
+.bubbleLabel {
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .timePanel {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 160px;
+    padding: 0 132px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/byn-count-down-desktop.jpg?v=1599936500);
+  }
+
+  .countDownBoard {
+    width: 580px;
+  }
+
+  .timePanelTitle {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .timeDigit {
+    font-size: 56px;
+    padding: 0 8px;
+  }
+
+  .timeUnit {
+    font-size: 18px;
+  }
+
+  .bubblePanel {
+    padding-top: 0;
+  }
+
+  .bubblePanelTitle {
+    letter-spacing: 4px;
+    font-size: 18px;
+  }
+
+  .bubbleList {
+    max-width: 1200px;
+    margin: 32px auto 12px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .bubble {
+    width: 46px;
+    height: 66px;
+  }
+
+  .bubbleLabel {
+    font-size: 14px;
+  }
+}

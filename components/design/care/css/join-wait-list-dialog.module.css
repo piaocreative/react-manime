@@ -1,0 +1,99 @@
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  width: 320px;
+  padding: 40px 24px 48px;
+  z-index: 400;
+  min-height: 310px;
+}
+
+.title {
+  font-size: 17px;
+  font-family: 'avenirHeavy';
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.instruction {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.inputLine {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputField {
+  width: 100%;
+  height: 32px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 40px;
+}
+
+.actionButton {
+  width: 100%;
+}
+
+.closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 150;
+  background: rgba(44, 67, 73, 0.33);
+}
+
+.subscribed {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 560px;
+    padding: 54px 60px 80px;
+    min-height: 302px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .instruction {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .inputField {
+    width: 300px;
+    margin-right: 24px;
+    margin-bottom: unset;
+  }
+
+  .actionButton {
+    width: unset;
+  }
+}

@@ -1,0 +1,59 @@
+.videoDialog {
+  position: fixed;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 400;
+}
+
+.playerWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.20%;
+  background: #000;
+}
+
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  top: 8px;
+  right: 20px;
+  color: #f7bfa0;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 350;
+  background: rgba(44, 67, 73, 0.33);
+}
+
+@media (min-width: 768px) {
+  .videoDialog {
+    width: 60%;
+  }
+
+  .playerWrapper {
+    width: 100%;
+  }
+}

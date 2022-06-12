@@ -1,0 +1,105 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Banner */
+
+.redeemBannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #f5efe7;
+}
+
+.redeemConfirmLabel {
+  font-size: 14px;
+  font-family: AvenirHeavy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.redeemConfirmTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 16px 0;
+}
+
+.redeemErrorMessage {
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.redeemOutreachText {
+  font-family: 'avenirBook';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c4349;
+}
+
+.redeemLink {
+  font-style: italic;
+}
+
+.redeemHowToGuide {
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 9px 0 8px;
+  border: solid 1px #2c4349;
+  background-color: #2c4349;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.redeemHowToGuide a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.confirmBannerBow {
+  width: 64px;
+  object-fit: contain;
+}
+
+@media (min-width: 480px) {
+  .wrapper {
+    width: 480px;
+  }
+
+  .recipientListContainer {
+    padding: 40px;
+  }
+
+  .recipientTitle {
+    padding-bottom: 20px;
+  }
+
+  .confirmNextContainer {
+    margin: 80px auto 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .confirmNextContainer {
+    max-width: 680px;
+  }
+}

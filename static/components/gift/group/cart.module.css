@@ -1,0 +1,120 @@
+.bottomCart {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.bow{
+  position: relative;
+  width: 100%;
+  top: 2px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(0deg, #f7bfa066, #f7bfa022, #f7bfa011, #f7bfa000)
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: row;
+  height: 0px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: white;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.topSection {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  border-top: 2px solid #f7bfa0;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.bottonCartPrice {
+  text-align: right;
+  text-transform: capitalize;
+  flex: 10;
+}
+.bottomCartDetails {
+  font-family: 'AvenirBook';
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #2c4349;
+}
+.buttonSection {
+  height: 56px;
+}
+
+.cartControl {
+  margin-left: 15px;
+  padding-right: 15px;
+}
+.itemTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0;
+  margin-top: 2px;
+  width: 100px;
+  font-size: 12px;
+}
+.priceLabel {
+  text-align: center;
+}
+.cartImage {
+  object-fit: cover;
+  text-align: center;
+  width: 100%;
+}
+.cartItemContiner {
+  position: relative;
+  display: flex;
+  margin: 0px 2px;
+  width: 100px;
+  flex-direction: column;
+  font-size: 14px;
+}
+.removeItem {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.orderSummaryCart {
+
+  width: 100%;
+}
+.orderSummaryCart .topSection{
+  border-top: 0px solid #f7bfa000;
+}
+
+.orderSummaryCart .cartControl {
+
+
+}
+
+.orderSummaryCart .bottomCartDetails{
+
+}
+.orderSummaryCart .bottomCartPrice{
+
+}
+
+@media (min-width: 768px) {
+  .itemTitle {
+    font-size: 14px;
+  }
+}

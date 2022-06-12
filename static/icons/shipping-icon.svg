@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.772" height="20.494" viewBox="0 0 40.772 20.494">
+  <g id="Component_11_1" data-name="Component 11 – 1" transform="translate(0.25 0.25)">
+    <path id="Path_223" data-name="Path 223" d="M72.982,70.4a1.282,1.282,0,1,0,1.282,1.282A1.28,1.28,0,0,0,72.982,70.4Z" transform="translate(-39.438 -54.815)" fill="rgba(0,0,0,0)" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+    <g id="Group_11657" data-name="Group 11657">
+      <path id="Path_184" data-name="Path 184" d="M66.538,51.4H62.795a.1.1,0,0,0-.095.095v3.6a.1.1,0,0,0,.095.095h7.154c.047,0,.047,0,.095-.047a.165.165,0,0,0,.047-.095c0-.047,0-.047-.047-.095L66.632,51.4Z" transform="translate(-36.547 -46.662)" fill="rgba(0,0,0,0)" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+      <path id="Path_186" data-name="Path 186" d="M74.827,70.4a3.127,3.127,0,1,0,3.127,3.127A3.124,3.124,0,0,0,74.827,70.4Z" transform="translate(-41.283 -56.66)" fill="rgba(0,0,0,0)" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+      <path id="Path_188" data-name="Path 188" d="M21.727,70.4a3.127,3.127,0,1,0,3.127,3.127A3.124,3.124,0,0,0,21.727,70.4Z" transform="translate(-13.341 -56.66)" fill="rgba(0,0,0,0)" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+      <path id="Path_189" data-name="Path 189" d="M13.328,55.424a3.823,3.823,0,0,1,5.4.284,3.717,3.717,0,0,1,.995,2.132.1.1,0,0,0,.095.095H37.159a.1.1,0,0,0,.095-.095,3.584,3.584,0,0,1,.995-2.132l.284-.284a3.793,3.793,0,0,1,5.4.284,3.717,3.717,0,0,1,.995,2.132.1.1,0,0,0,.095.095h1.564A1.214,1.214,0,0,0,47.772,56.7V54.334A2.483,2.483,0,0,0,46.493,52.3l-3.127-1.658-4.5-4.975a2.27,2.27,0,0,0-1.658-.758h-.047l-2.511-3.032a1.344,1.344,0,0,0-1.042-.474H7.595a.1.1,0,0,0-.095.095V56.609a1.324,1.324,0,0,0,1.327,1.327H12a.1.1,0,0,0,.095-.095,3.584,3.584,0,0,1,.995-2.132C13.138,55.566,13.233,55.519,13.328,55.424Z" transform="translate(-7.5 -41.4)" fill="rgba(0,0,0,0)" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+      <line id="Line_5" data-name="Line 5" y2="16.535" transform="translate(23.595)" fill="none" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+      <path id="Path_224" data-name="Path 224" d="M72.982,70.4a1.282,1.282,0,1,0,1.282,1.282A1.28,1.28,0,0,0,72.982,70.4Z" transform="translate(-64.526 -54.815)" fill="rgba(0,0,0,0)" stroke="#2c4349" stroke-miterlimit="10" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

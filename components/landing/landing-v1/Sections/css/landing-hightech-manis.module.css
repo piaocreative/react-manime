@@ -1,0 +1,107 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 56px;
+  width: 100%;
+  min-height: max(70vh, 470px);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fef4f2;
+  overflow: hidden;
+}
+
+.rectPanel {
+  margin-top: 32px;
+  position: absolute;
+  width: 300px;
+  height: 108px;
+  background: #fff;
+  z-index: 1;
+}
+
+.textPanel {
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 100%;
+  top: -10px;
+  left: 50%;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-family: 'avenirHeavy';
+  text-align: center;
+}
+
+.description {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.getManiButton {
+  position: absolute !important;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  left: 50%;
+  min-width: 160px;
+  color: #2c4349;
+}
+
+.maniHand {
+  object-fit: cover;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.videoStyle {
+  width: 100%;
+  object-fit: cover;
+  background-color: #fef4f2;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    margin-top: 70px;
+    padding: 0;
+    height: 50vh;
+    min-height: 470px;
+  }
+
+  .rectPanel {
+    margin-top: unset;
+    margin-left: 10%;
+    width: 400px;
+    height: 120px;
+    background: #f6ddd0;
+  }
+
+  .textPanel {
+    font-size: 20px;
+  }
+
+  .maniHand {
+    object-fit: contain;
+    height: 100%;
+    width: unset;
+    margin-top: unset;
+    margin-bottom: -32px;
+  }
+
+  /* .videoStyle {
+    object-fit: contain;
+    object-position: bottom right;
+  } */
+
+  .getManiButton {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .videoStyle {
+    object-fit: contain;
+    object-position: bottom right;
+  }
+}

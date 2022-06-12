@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.oneLine {
+  display: flex;
+  margin-top: 12px;
+}
+
+.title {
+  font-family: 'avenirHeavy';
+  font-size: 17px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.iconsLine {
+  display: flex;
+  width: 100%;
+}
+
+.oneItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+}
+
+.iconStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  padding: 14px 0;
+}
+
+.description {
+  max-width: 82px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.twoLines {
+  max-width: 50px;
+}
+
+.maniset {
+  width: 34%;
+  max-height: 80px;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+.manisetLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    margin: 52px;
+  }
+
+  .title {
+    margin-bottom: unset;
+    margin-left: 100px;
+  }
+
+  .oneItem {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .iconStyle {
+    height: 78px;
+    padding: 16px 0;
+    margin-right: 18px;
+  }
+
+  .maniset {
+    display: none;
+  }
+  
+  .manisetLabel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .manisetLabel > span {
+    padding-right: 4px;
+  }
+
+  .description {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1200px;
+    margin: 52px auto;
+  }
+}

@@ -1,0 +1,150 @@
+.root {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.extraContainer {
+  position: relative;
+  width: 100%;
+  border: 1px solid #f7bfa0;
+  margin-bottom: 24px;
+  padding: 66px 48px 40px;
+}
+
+.extraContainer ul li {
+  margin: 0 10px !important;
+}
+
+.removeContainer {
+  width: 100;
+}
+
+.titlePanel {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.titleTop {
+  padding: 0 16px;
+  background: #fff;
+  color: #f7bfa0;
+}
+
+.titleBottom {
+  color: #f7bfa0;
+}
+
+.slideItem {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extraInfoTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fef7f3;
+  padding: 0 12px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  height: 32px;
+  margin-bottom: 20px;
+  font-family: 'avenirBlack';
+  text-transform: uppercase;
+}
+
+.playerWrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 56%; /* 720 / 1280 = 0.5625 */
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.extraInfoDescription {
+  min-height: 260px;
+  text-align: center;
+}
+
+.bold {
+  font-family: avenirHeavy;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .root {
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .extraContainer {
+    width: calc(50% - 32px);
+    margin-bottom: 0;
+    padding: 100px 90px 60px;
+  }
+
+  .removeContainer {
+    width: calc(50% - 32px);
+  }
+
+  .playerWrapper {
+    width: calc(50% - 32px);
+    padding-top: 30%; /* 720 / 1280 = 0.5625 */
+  }
+
+  .extraInfoTitle {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .titlePanel {
+    top: -20px;
+    font-size: 24px;
+  }
+
+  .extraInfoDescription {
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .extraContainer {
+    padding: 80px 90px 50px;
+  }
+}
+
+@media (min-width: 1540px) {
+  .titlePanel {
+    font-size: 28px;
+  }
+
+  .extraContainer {
+    padding: 80px 90px 50px;
+  }
+
+  .playerWrapper {
+    width: calc(50% - 32px);
+  }
+
+  .extraInfoDescription {
+    min-height: 200px;
+  }
+}

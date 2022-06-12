@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.659" height="50.403" viewBox="0 0 33.659 50.403">
+  <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(0.5 0.903)">
+    <path id="Path" d="M30.134,22.934c-1.613-3.235-3.469-6.605-5.516-10.022-1.2-2.006-2.486-3.893-3.851-5.9l-.131-.194c-.535-.785-1.08-1.588-1.63-2.418L16.085,0,12.211,5.823c-.55.823-1.07,1.6-1.579,2.4-3.463,5.411-6.515,10.35-8.777,16.007A21.931,21.931,0,0,0,0,31.8c-.178,9.1,6.821,16.812,15.6,17.183.222.009.442.014.663.014h.162c8.46-.081,15.416-6.832,16.181-15.7.349-4.045-.984-7.371-2.477-10.362" fill="#fff" stroke="#f7bfa0" stroke-miterlimit="10" stroke-width="1"/>
+    <text id="_" data-name="$" transform="translate(8 19)" fill="#f7bfa0" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="2.688" y="17">$</tspan></text>
+  </g>
+</svg>

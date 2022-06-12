@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImg {
+  margin: 12px 0;
+  margin-right: 20px;
+  width: 220px;
+}
+
+.outlinedButton {
+  margin: 12px 0 16px;
+}
+
+.buttonLine {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  bottom: 20px;
+  width: calc(100% - 32px);
+}
+
+.whitePanel {
+  width: calc(100% + 48px);
+  padding: 16px 0;
+  background: #fff;
+}
+
+.grayPanel {
+  width: 100%;
+  height: 100%;
+  background: #F9F9F9;
+  padding: 20px 40px;
+}
+
+.actionButton {
+  /* width: calc(100% + 48px); */
+  width: 100%;
+}
+
+.emailStyle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 15px;
+}
+
+.emailStyle:hover {
+  text-decoration: none;
+}
+
+.oneLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.oneLine > div {
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .buttonLine {
+    position: unset;
+  }
+}

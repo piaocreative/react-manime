@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ES6", 
+    "lib": [
+      "dom",
+      "ES5",
+      "ES6",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["static/components/*"],
+    },
+    "checkJs": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "rendererOptions": {
+            "css": {
+              "includePaths": ["."]
+            }
+          }
+        }
+      }
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "cypress"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx", 
+    "**/*.jsx",
+    "**/*.js", 
+  ]
+}

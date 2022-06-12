@@ -1,0 +1,25 @@
+.root {
+  background: #f5f1e9;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 13px;
+  height: 40px;
+}
+
+.root > div {
+  white-space: nowrap;
+}
+
+.knowMore {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .root {
+    font-size: 14px;
+  }
+}

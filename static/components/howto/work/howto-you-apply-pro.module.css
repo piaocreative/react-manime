@@ -1,0 +1,60 @@
+.container {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.title {
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 12px solid #fef7f3;
+  padding: 0 16px;
+  height: 24px;
+}
+
+.actionMobileButton {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.actionDesktopButton {
+  margin-top: 36px;
+  display: none;
+  width: 240px;
+}
+
+.desktopView {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 60px;
+  }
+
+  .title {
+    font-size: 28px;
+    letter-spacing: 1px;
+    border-bottom: 16px solid #fef7f3;
+    height: 30px;
+  }
+
+  .actionMobileButton {
+    display: none;
+  }
+
+  .actionDesktopButton {
+    display: flex;
+  }
+
+  .desktopView {
+    display: unset;
+  }
+
+  .mobileView {
+    display: none;
+  }
+}

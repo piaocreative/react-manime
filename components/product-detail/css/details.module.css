@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  font-size: 14px;
+}
+
+.oneLine {
+  display: flex;
+  margin-top: 12px;
+}
+
+.title {
+  font-family: 'avenirHeavy';
+  padding-right: 8px;
+}
+
+.iconsLine {
+  display: flex;
+  width: 100%;
+}
+
+.oneItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+}
+
+.iconStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  padding: 14px 0;
+}
+
+.description {
+  max-width: 84px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.twoLines {
+  max-width: 50px;
+}
+
+.maniset {
+  width: 34%;
+  max-height: 80px;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+.manisetLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .container {
+
+  }
+
+  .iconStyle {
+    height: 74px;
+    padding: 16px 0;
+  }
+
+  .maniset {
+    display: none;
+  }
+  
+  .manisetLabel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .manisetLabel > span {
+    padding-right: 4px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

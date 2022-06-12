@@ -1,0 +1,114 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.headerField {
+  flex: 1;
+  font-family: 'avenirHeavy';
+  padding: 0.5em;
+}
+
+.entitlementsList {
+  border-top: 1px solid #2c4349;
+  border-bottom: 1px solid #2c4349;
+}
+
+.itemContainer:nth-child(odd) {
+  background-color: rgb(244, 239, 237);
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0.25em 0;
+  align-items: center;
+}
+
+.itemField {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.noEntitlements {
+  padding: 24px 0;
+}
+
+.unredeemableButton {
+  margin: auto;
+  width: 75%;
+  padding: 8px 0;
+  background-color: rgb(228, 225, 221);
+  cursor: not-allowed;
+}
+
+.redeemButton {
+  margin: auto;
+  width: 75%;
+  padding: 8px 0;
+  background-color: #2c4349;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .headerField,
+  .itemField,
+  .unredeemableButton,
+  .redeemButton {
+    font-size: 11px;
+  }
+  .unredeemableButton,
+  .redeemButton {
+    width: 90%;
+    padding: 8px 4px;
+  }
+}
+
+.paginationContainer {
+  display: flex;
+  margin: 0.5em auto 0;
+  width: 50%;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(244, 239, 237);
+}
+
+.paginationPage,
+.paginationPrev,
+.paginationNext {
+  flex: 1;
+  list-style: none;
+  padding: 8px;
+  background-color: #2c4349;
+  color: white;
+  margin: 4px;
+  text-align: center;
+}
+
+.paginationActivePage {
+  background-color: white;
+}
+
+.paginationPageLink,
+.paginationPrevLink,
+.paginationNextLink {
+  width: 100%;
+  display: inline-block;
+  color: white;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.paginationActivePageLink {
+  color: #2c4349;
+  font-family: 'avenirHeavy';
+}
+
+.paginationDisabled {
+  background-color: rgb(228, 225, 221);
+  color: #2c4349;
+  cursor: not-allowed;
+}

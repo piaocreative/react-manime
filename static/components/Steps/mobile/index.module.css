@@ -1,0 +1,33 @@
+.root {
+  position: relative;
+  padding: 0px;
+}
+
+.stepBarComplete {
+  background: #F7BFA0;
+  height: 4.2px;
+}
+
+.stepBarRemaining {
+  background: #fff;
+  flex-grow: 10;
+  margin-left: -20px;
+  height: 4.2px;
+}
+.dropGroup {
+  margin-top: 5px;
+}
+
+.waterDrop {
+  height: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  margin-top: -32px;
+  margin-left: -4px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'avenirMedium';
+  transform: translate(0%, 0%);
+}

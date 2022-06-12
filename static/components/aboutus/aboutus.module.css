@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+}
+
+.subHeaderBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #F8F1ED;
+  margin-bottom: 40px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.orangeColorTitle {
+  color: #F7BFA0;
+  padding: 0 2px;
+  font-family: avenirHeavy;
+}
+
+.topPanel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.topPanel > div {
+  width: 100%;
+}
+
+.secondPanel {
+  margin: 50px 0;
+}
+
+.thirdPanel {
+  margin: 50px 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.mobileOnly {
+  display: block;
+}
+
+.desktopOnly {
+  display: none;
+}
+
+.lastPanel {
+  margin: 50px 0;
+}
+
+.divider {
+  border-bottom: 1.5px solid #2C4349;
+  width: 100%;
+  opacity: 0.3;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headerTitle {
+    font-size: 35px;
+  }
+
+  .topPanel > div {
+    width: 50%;
+  }
+
+  .imageText {
+    padding-right: 12px;
+  }
+
+  .thirdPanel {
+    margin: 40px 0;
+    padding: 0 60px;
+    font-size: 25px;
+  }
+
+  .mobileOnly {
+    display: none;
+  }
+  
+  .desktopOnly {
+    display: block;
+  }
+
+  .subHeaderBar {
+    height: 120px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .mainTitle {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .topPanel {
+    flex-direction: row;
+  }
+}
+
+.cofoundersImage {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 50%;
+  }
+}

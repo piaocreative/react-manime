@@ -1,0 +1,75 @@
+.container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px 16px;
+  z-index: 100;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  transition: all 0.6s ease;
+  transform: translateX(110%);
+}
+
+.move {
+  transform: translateX(0) !important;
+}
+
+.closeButton {
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 12px;
+}
+
+.title {
+  font-family: 'gentiumBasic';
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.question {
+  font-size: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.inputLine {
+  display: flex;
+}
+
+.description {
+  font-size: 9px;
+  text-align: center;
+  color: rgba(71, 71, 71, 0.5);
+}
+
+.description > a {
+  color: rgba(71, 71, 71, 0.5);
+}
+
+.actionButton {
+  font-size: 14px;
+  margin-left: 12px;
+  padding: 0 12px;
+  width: 180px;
+}
+
+.subscibedLabel {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+  height: 52px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 380px;
+    right: 40px;
+    bottom: 40px;
+  }
+}

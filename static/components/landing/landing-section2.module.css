@@ -1,0 +1,141 @@
+.container {
+  margin-top: 40px;
+  width: 100%;
+  /* height: calc(100vh - 70px); */
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.orangeTitle {
+  color: #F7BFA0;
+}
+
+.darkTitle {
+  color: #2C4349;
+}
+
+.description {
+  padding: 0 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  max-width: 420px;
+}
+
+.textPanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F8F1ED;
+  z-index: 1;
+  padding: 48px 0;
+}
+
+.imgPanel {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ebe6e3;
+  background-image: url('https://cdn.shopify.com/s/files/1/0253/6561/0605/files/on-the-go-mobile.jpg?v=1592578460');
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #F9F4F4;
+  opacity: 0.5;
+  min-height: 300px;
+}
+
+.bubble {
+  position: absolute;
+  height: 140%;
+  right: -40%;
+  bottom: -100px;
+  min-height: 300px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    margin-top: 70px;
+    min-height: 60vh;
+    flex-direction: column;
+  }
+
+  .textPanel {
+    width: 100%;
+    /* background-color: transparent; */
+    z-index: 1;
+  }
+
+  .imgPanel {
+    width: 100%;
+    min-height: 300px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0253/6561/0605/files/on-the-go-desktop.jpg?v=1592578460');
+    /* margin-left: 30px; */
+  }
+
+  .description {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .overlay {
+    width: 88%;
+  }
+
+  .bubble {
+    right: unset;
+    bottom: unset;
+    top: -20px;
+    left: -30px;
+    height: 100%;
+  }
+
+  .title {
+    flex-direction: column;
+    font-size: 30px;
+  }
+
+  .title > div {
+    /* margin-bottom: 16px; */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .imgPanel {
+    width: 50%
+  }
+
+  .textPanel {
+    width: 50%;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+}

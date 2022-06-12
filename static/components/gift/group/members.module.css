@@ -1,0 +1,346 @@
+
+.header {
+  background-color: #f5efe7;
+  font-family: Avenir;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  padding-bottom: 72px;
+}
+
+.header div {
+  line-height: 15px;
+}
+.header .title {
+  font-family: Gentium;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.promoSection {
+  width: calc(100% - 20px);
+  height: 26px;
+  border-radius: 20px;
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+ .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  text-align: center;
+  width: calc((100%  /3) - 4px);
+  height: 20px;
+  font-size: 12px;
+  font-family: AvenirHeavy;
+}
+
+ .active {
+  background-color: #f7bfa0;
+  color: #213439;
+
+  border-radius: 10px;
+
+}
+
+.promoOverride {
+  background-color: transparent;
+  margin-top: 0px;
+}
+
+.promoOverride .item{
+  font-family: AvenirLight;
+  font-size: 10px;
+}
+.control {
+  font-family: AvenierHeavy;
+  font-size: 18px;
+  color: #213439;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.control .button {
+  cursor: pointer;
+  background-color: #f7bfa0;
+  color: white;
+  width: 100%;
+  flex-basis: auto;
+
+  height: 36px;
+  border-radius: 18px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 3px;
+  padding-right: 3px;
+  
+}
+.control > div {
+  margin: 10px;
+}
+
+.control .count {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #213439;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: AvenirHeavy;
+  padding-top: 2px
+}
+
+.myselfWrapper {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.buttonLabel {
+  font-size: 12px;
+  font-family: AvenirHeavy;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.peachIcon {
+  height: 80px;
+  color: #f7bfa0;
+}
+
+.peachIconSmall {
+  height: 35px;
+  color: #f7bfa0;
+}
+.recipientInput  {
+  max-width: 300px;
+}
+.plus {
+  color: white;
+  text-align: right;
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.modalOverlay {
+  position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height:100%;
+ justify-content: center;
+ align-items: center;
+ 
+ background-color: #00000085;
+ z-index: 100;
+ opacity: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.modalTitle {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.modalContainer {
+  position: relative;
+  border-radius: 2px;
+width: 100%;
+ opacity: 1;
+ display: flex ;
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ background-color: ghostwhite;
+ position: fixed;
+ left: 0;
+ bottom: 0px;
+
+ padding: 20px;
+ z-index: 300;
+ 
+}
+
+.desktop {
+  position: relative;
+  bottom:  auto;
+  left: auto;
+  width: min(460px, 30vw);
+}
+
+.modalContainer button {
+  text-transform: uppercase;
+}
+
+.closeModal {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+}
+
+.modalContainer .subTitle {
+  padding: 15px 10px;
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+ .input {
+  padding-bottom: 0px;
+  height: 35px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+  background-color: color;
+  border: 1px solid lightgray;
+  border-radius: 0;
+  box-sizing: border-box;
+
+}
+
+.input:focus {
+  outline: none;
+}
+
+.error {
+  width: 100%;
+  color: #FF8181;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 14px;
+  height: 16px;
+}
+
+.recipients {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+
+}
+
+.recipient {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  font-size: 16px;
+}
+
+.recipeintDetails {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  margin-left: 10px;
+} 
+.recipient .name {
+
+  font-family: AvenirHeavy;
+}
+
+
+.spaceLine {
+  border-top: 1px solid lightgray;
+}
+
+.buttonRow {
+
+  width: 100%;
+
+ display: flex ;
+ flex-direction:row;
+ justify-content: flex-end;
+
+
+ 
+}
+
+.betweenButtonPadding {
+  width: 20px;
+}
+
+.pencilContainer {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background: #f7bfa0;
+  text-align: center;
+  font-family: AvenirLight;
+  font-size: 23px;
+  line-height: 35px;
+  color: #fff;
+  padding-bottom: 4px;
+}
+
+.grayContainer {
+  background: #555;
+}
+
+.guestPage {
+  display: grid;
+  margin-top: -72px;
+  margin-bottom: 240px;
+}
+
+.guestPage > div:first-child {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding-bottom: 15px;
+  }
+
+  .guestPage {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .guestPage > div:first-child {
+    display: flex;
+    order: 0;
+  }
+
+  .promoSection {
+    background-color: #fdeee6;
+  }
+
+  .promoOverride {
+    background-color: transparent;
+  }
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
+}

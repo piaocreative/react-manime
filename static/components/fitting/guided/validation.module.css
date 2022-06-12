@@ -1,0 +1,163 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  background: #fdf3ed;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 10px 10px 70px 10px;
+}
+.container .scanNavigationBar {
+  width: 100%;
+}
+
+.mainTitle {
+  font-family: 'AvenirHeavy';
+  font-size: 16px;
+  text-align: left;
+  margin: 10px 0px;
+
+}
+
+.mainDescription {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: AvenirLight;
+}
+
+.oneItem {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.imageReview {
+  width: calc(75vw - 40px);
+  margin-right: 10px;
+  flex: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+.retakeButton {
+  width: calc(75vw - 40px);
+  margin-bottom: 10px;
+}
+
+.fingerTitle {
+  font-family: 'avenirMedium';
+  text-align: center;
+  padding: 12px 0 8px;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+
+  width: 100%;
+}
+.submitButton {
+  width: 80%
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+  .retakeButton {
+    width: calc(40vw - 40px);
+  }
+  .imageReview {
+    width: calc(40vw - 40px);
+  }
+}
+
+
+
+.mainTitle {
+  font-family: 'avenirHeavy';
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 4px;
+  letter-spacing: 2px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.mainDescription {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 6px;
+  width: 100%;
+}
+
+.oneItem {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  grid-gap: 16px;
+  background: #fff;
+  padding: 16px;
+}
+
+.subTitle {
+  font-size: 14px;
+  font-family: avenirHeavy;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.imagePanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.nailPanel {
+  position: relative;
+  width: 100%;
+}
+
+.nailStyle {
+  min-height: 200px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tipStyle {
+  position: absolute;
+  top: 12px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  background: #000;
+  opacity: 0.17;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 10px;
+  font-family: avenirHeavy;
+  text-transform: uppercase;
+}
+
+.retakeButton {
+  width: 100%;
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+
+.fingerTitle {
+  font-family: 'avenirMedium';
+  text-align: center;
+  padding: 12px 0 8px;
+}
+
+.submitButton {
+  position: fixed;
+  bottom: 25px;
+  left: 10px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  text-transform: uppercase;
+}

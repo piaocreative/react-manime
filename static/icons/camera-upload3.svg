@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+
+            <g id="CameraUpload" transform="scale(2, 2), translate(5, 6.5)">
+            <path id="Stroke_1" data-name="Stroke 1" d="M2.661,5.322A2.661,2.661,0,1,0,0,2.661,2.661,2.661,0,0,0,2.661,5.322Z" transform="translate(4.751 3.071)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+            <path id="Stroke_3" data-name="Stroke 3" d="M11.267,10.058H1.162A1.162,1.162,0,0,1,0,8.9V2.929A1.162,1.162,0,0,1,1.162,1.767H3.654L4.067.889A1.549,1.549,0,0,1,5.468,0H8.939a1.549,1.549,0,0,1,1.4.889l.413.877h2.492a1.162,1.162,0,0,1,1.162,1.162V6.917" transform="translate(0.16 0.16)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+            <path id="Stroke_5" data-name="Stroke 5" d="M0,.16H2.165" transform="translate(0.872 0.382)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+            <path id="Stroke_7" data-name="Stroke 7" d="M0,.16H2.165" transform="translate(12.402 10.058)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+            <path id="Stroke_9" data-name="Stroke 9" d="M0,.16H2.165" transform="translate(14.567 10.058)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+            <path id="Stroke_12" data-name="Stroke 12" d="M.16,2.165V0" transform="translate(14.407 10.218)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+            <path id="Stroke_14" data-name="Stroke 14" d="M.16,2.165V0" transform="translate(14.407 8.053)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".5"/>
+          </g>
+</svg>

@@ -1,0 +1,142 @@
+.container {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.textPanel {
+  display: none;
+  font-size: 30px;
+  color: #2C4349;
+  padding: 20px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.mobileTextPanel {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 3px;
+  width: 100%;
+  color: #2C4349;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.image {
+  /* position: absolute; */
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.slider {
+  width: 100%;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  display: flex !important;
+  justify-content: center;
+  /* width: 700px; */
+}
+
+.name {
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.userImage {
+  margin-top: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  transform: translate(-20%, 0);
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.reviewPanel {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 200px;
+  min-height: 300px;
+  padding: 30px;
+  z-index: 1;
+  background: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+@media (min-width: 480px) {
+  .textPanel {
+    display: none;
+  }
+
+  .reviewPanel {
+    left: calc(50% + 60px);
+    right: unset;
+  }
+
+  .userImage {
+    transform: translate(0, 0);
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 70px;
+  }
+
+  .mobileTextPanel {
+    font-size: 35px;
+  }
+
+  .reviewPanel {
+    left: calc(50% + 60px);
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+  }
+  .mobileTextPanel {
+    display: none;
+  }  
+  .textPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    /* width: 100%; */
+    width: calc(100% - 300px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviewPanel {
+    /* left: calc(50% + 60px); */
+    left: unset;
+    right: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviewPanel {
+    /* left: 280px; */
+  }
+}
+
+@media (min-width: 1920px) {
+  .reviewPanel {
+    left: calc(50% + 100px);
+  }
+}

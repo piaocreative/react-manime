@@ -1,0 +1,19 @@
+{
+  "defaultCommandTimeout": 15000,
+  "execTimeout": 180000,
+  "pageLoadTimeout": 180000,
+  "requestTimeout": 15000,
+  "responseTimeout": 90000,
+  "taskTimeout": 180000,
+  "screenshotOnRunFailure": false,
+  "video": false,
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  },
+  "numTestsKeptInMemory": 10,
+  "env": {
+    "BASE_URL": "http://localhost:3000",
+    "_BASE_URL": "http://localhost"
+  }
+}

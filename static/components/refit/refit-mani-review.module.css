@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonLine {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 80px);
+  margin-top: 20px;
+  position: fixed;
+  bottom: 20px;
+}
+
+.titleMargin {
+  margin-bottom: 14px;
+}
+
+.fingersLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: auto auto auto auto auto; */
+  grid-gap: 6px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.oneColumn {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.editButton {
+  height: 20px;
+}
+
+.oneItem {
+  display: grid;
+  place-items: center;
+  background: rgba(247, 191, 160, 0.21);
+  font-size: 9px;
+  height: 20px;
+  white-space: nowrap;
+}
+
+.fingerIcon {
+  margin: 0 auto 8px;
+  min-height: 54px;
+}
+
+.whitePanel {
+  display: grid;
+  place-content: center;
+  background: #fff;
+  font-size: 10px;
+  height: 82px;
+}
+
+.thumbIcon {
+  padding: 0 8px;
+}
+
+.actionButton {
+  width: 100%;
+}
+
+.leftHand {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+  .editButton {
+    height: 24px;
+  }
+  
+  .oneItem {
+    font-size: 12px;
+    height: 24px;
+  }
+
+  .whitePanel {
+    font-size: 12px;
+    height: 90px;
+  }
+
+  .buttonLine {
+    position: unset;
+    width: 100%;
+  }
+}

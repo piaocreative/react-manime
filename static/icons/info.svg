@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-292 -81) translate(280.816 68.171) translate(11.184 12.829)">
+                    <circle cx="10" cy="12" r="9.5" stroke="#FFF"/>
+                    <text fill="#FFF" font-family="Avenir-Book, Avenir" font-size="19">
+                        <tspan x="8" y="19">i</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

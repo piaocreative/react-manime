@@ -1,0 +1,26 @@
+.bubbleIcon {
+  transform: scale(0.8);
+}
+
+.colorName {
+  position: absolute;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  left: 50%;
+  top: 52px;
+  display: none;
+}
+
+.showLabel {
+  display: block;
+}
+
+@media (min-width: 480px) {
+  .bubbleIcon {
+    transform: scale(0.95);
+  }
+
+  .colorName {
+    top: 60px;
+  }
+}

@@ -1,0 +1,103 @@
+.container {
+  position: relative;
+  margin-top: 24px;
+  padding: 24px 24px;
+  width: 100%;
+  border: 1px solid #F7BFA0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0px;
+  padding: 0 12px;
+  font-size: 18px;
+  background: #fff;
+  color: #f7bfa0;
+  letter-spacing: 2px;
+}
+
+.tipInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+.tipImage {
+  height: 100px;
+  margin-bottom: -4px;
+}
+
+.tipTitle {
+  font-size: 13px;
+  margin-bottom: 8px;
+  text-align: center;
+  max-width: 108px;
+}
+
+.tipDescription {
+  font-size: 11px;
+  text-align: center;
+  max-width: 128px;
+  padding-bottom: 12px;
+}
+
+.tipDescription1 {
+  max-width: 100px;
+}
+
+.tipDescription3 {
+  max-width: 124px;
+}
+
+@media(min-width: 768px) {
+  .container {
+    margin-top: 50px;
+    padding: 60px 70px;
+  }
+
+  .title {
+    padding: 0 12px;
+    font-size: 28px;
+  }
+
+  .tipImage {
+    height: 160px;
+    margin-bottom: 16px;
+  }
+
+  .tipTitle {
+    font-size: 17px;
+    margin-bottom: 12px;
+    max-width: unset;
+  }
+  
+  .tipDescription {
+    font-size: 14px;
+    max-width: 200px;
+  }
+
+  .tipDescription0 {
+    max-width: 164px;
+  }
+
+  .tipDescription1 {
+    max-width: 144px;
+  }
+
+  .tipDescription2 {
+    max-width: 160px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .tipInfo {
+    width: 25%;
+  }
+}

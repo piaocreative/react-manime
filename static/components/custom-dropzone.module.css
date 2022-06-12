@@ -1,0 +1,78 @@
+.originDrop {
+  /* width: 180px; */
+  width: 100%;
+  height: calc(100vh - 280px);
+  margin-left: 0px;
+  border: 2px dotted gray;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dropzoneImageContainer, .dropzoneImageContainer>img {
+  width: 100%;
+  height: 100%;
+}
+
+.fileDragEnter {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  color: black;
+  text-align: center;
+  border: 5px groove gray;
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.fileDragEnter>p{
+  font-size: 20px;
+  font-family: serif;
+  margin-top: 9px;
+}
+
+.onlyMobileView {
+  display: block;
+}
+
+.onlyDesktopView {
+  display: block;
+}
+
+.placeholderImage {
+  margin-top: 16px;
+  width: 100%;
+  height: calc(100vh - 280px);
+  object-fit: cover;
+}
+
+.dropZonePanel {
+  height: calc(100vh - 280px);
+  border: none;
+ }
+
+@media (min-width: 768px) {
+  .dropZonePanel {
+    height: calc(100vh - 290px);
+  }
+}
+
+@media (max-width: 479px) {
+  .originDrop {
+    width: 100%;
+  }
+
+  .onlyMobileView {
+    display: block;
+  }
+
+  .onlyDesktopView {
+    display: none;
+  }
+}

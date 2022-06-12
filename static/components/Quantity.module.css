@@ -1,0 +1,26 @@
+.quantityComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 1px;
+    border-top-color: #cccccc;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+.quantityComponent>div {
+    color: #666666;
+    font-weight: 100;
+    font-family: sans-serif;
+    
+}
+.quantityRight {
+    display: flex;
+    flex-direction: row;
+}
+.quantityRight>div {
+    margin-left: 10px;
+}

@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonLine {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 80px);
+  margin-top: 20px;
+  position: fixed;
+  bottom: 20px;
+}
+
+.titleMargin {
+  margin-bottom: 14px;
+}
+
+.fingersLine {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: auto auto auto auto auto; */
+  grid-gap: 16px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.oneColumn {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 14px;
+}
+
+.editButton {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 14px;
+  text-decoration: underline;
+  height: 20px;
+}
+
+.oneItem {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.blur {
+  opacity: 0.5;
+}
+
+.reviewCircle {
+  display: grid;
+  place-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.fingerIcon {
+  margin: 0 auto;
+  min-height: 52px;
+}
+
+.nailName {
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-family: 'avenirHeavy';
+  font-size: 12px;
+}
+
+.whitePanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 62px;
+  height: 84px; 
+  background: #fff;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.reviewLine {
+  display: flex;
+  align-items: center;
+  background: rgba(247, 191, 160, 0.21);
+  padding: 0 12px 0 8px;
+}
+
+.thumbIcon {
+  padding: 0 8px;
+}
+
+.actionButton {
+  width: 100%;
+}
+
+.leftHand {
+  transform: scaleX(-1);
+}
+
+.titleLine {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #2C4349; 
+  line-height: 0.1em;
+  margin: 16px 0;
+}
+
+.titleLine > span {
+  font-family: 'avenirHeavy';
+  background: #FEF7F3;
+  padding: 0 10px; 
+}
+
+@media (min-width: 768px) {
+  .editButton {
+    height: 24px;
+  }
+  
+  .oneItem {
+    font-size: 14px;
+  }
+
+  .nailName {
+    font-size: 14px;
+  }
+
+  .whitePanel {
+    font-size: 12px;
+    width: 68px;
+    height: 90px;
+  }
+
+  .buttonLine {
+    position: unset;
+    width: 100%;
+  }
+}

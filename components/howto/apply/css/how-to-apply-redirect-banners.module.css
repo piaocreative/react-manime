@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  display: flex;
+  margin: 40px auto 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 68px;
+  }
+}

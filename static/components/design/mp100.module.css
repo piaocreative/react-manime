@@ -1,0 +1,13 @@
+.actionButton {
+  font-size: 11px;
+  letter-spacing: 0;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .actionButton {
+    letter-spacing: 1px;
+    padding: 0 20px;
+  }
+}

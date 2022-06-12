@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Manis",
+    "url": "/manicures",
+    "testCases": [
+      {
+        "name_case": "one Mani item",
+        "nbr_items": 1,
+        "diff_item": 1
+      },
+      {
+        "name_case": "same Mani item twice",
+        "nbr_items": 2,
+        "diff_item": 0
+      },
+      {
+        "name_case": "different Mani items",
+        "nbr_items": 2,
+        "diff_item": 1
+      }
+    ]   
+  }, {
+    "title": "Pedis",
+    "url": "/pedicures",
+    "testCases": [
+      {
+        "name_case": "one Pedi item",
+        "nbr_items": 1,
+        "diff_item": 1
+      },
+      {
+        "name_case": "same Pedi item twice",
+        "nbr_items": 2,
+        "diff_item": 0
+      },
+      {
+        "name_case": "different Pedi items",
+        "nbr_items": 2,
+        "diff_item": 1
+      }  
+    ]     
+  } , {
+    "title": "Essentials",
+    "url": "/essentials",
+    "testCases": [
+      {
+        "name_case": "one Essential item",
+        "nbr_items": 1,
+        "diff_item": 1
+      },
+      {
+        "name_case": "same Essential item twice",
+        "nbr_items": 2,
+        "diff_item": 0
+      },
+      {
+        "name_case": "different Essential items",
+        "nbr_items": 2,
+        "diff_item": 1
+      }
+    ] 
+  }
+]

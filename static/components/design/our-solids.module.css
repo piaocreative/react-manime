@@ -1,0 +1,111 @@
+.container {
+  margin: 70px 10px 22px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 20px);
+  border: 1px solid #2c4349;
+  padding: 36px 12px 28px;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0;
+  font-size: 17px;
+  background: #fff;
+  padding: 0 12px;
+  white-space: nowrap;
+  font-family: 'avenirHeavy';
+  letter-spacing: 2px;
+}
+
+.bubbleItem {
+  cursor: pointer;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.bubble {
+  width: 36px;
+  height: 52px;
+}
+
+.productTitle {
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+  width: 50px;
+  height: 14px;
+  margin: 8px 0 16px;
+}
+
+.centerTitle {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: 80px;
+}
+
+.bigTitle {
+  width: 56px;
+}
+
+.actionButtonWrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translate(-50%, 50%);
+}
+
+.actionButtonWrapper > button {
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    justify-content: left;
+    margin: 84px auto 36px;
+    padding: 48px 80px 36px;
+    max-width: 1300px;
+  }
+
+  .bubble {
+    width: 46px;
+    height: 66px;
+  }
+  
+
+  .bubbleItem {
+    width: 12.5%;
+  }
+
+  .title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0 16px;
+    text-transform: uppercase;
+  }
+
+  .productTitle {
+    font-size: 15px;
+    margin: 12px 0 18px;
+    width: 66px;
+    height: 36px;
+  }
+
+  .centerTitle {
+    width: 108px;
+  }
+
+  .bigTitle {
+    width: unset;
+  }
+}

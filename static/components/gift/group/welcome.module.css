@@ -1,0 +1,115 @@
+.bannerContainer {
+  height: calc(100vh - 100px);
+  min-height: 580px;
+  margin-bottom: 40px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/group-gift-welcome-bg-mobile.jpg?v=1617901373);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:#dfb2a2;
+}
+
+.mainPanel {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-family: AvenirHeavy;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 23px;
+  font-family: GentiumBasic;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.textPanel {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 4px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1.2px;
+  border-image-source: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
+  border-image-slice: 0 0 0 1;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  /* margin-left: 10px; */
+}
+
+.bubbleDrop {
+  width: 30px;
+  background-image: url(/static/icons/water-drop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  padding-top: 10px;
+  font-family: AvenirHeavy;
+  margin-left: -15px;
+}
+
+.subTitle {
+  font-family: AvenirHeavy;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.stepDescription {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.startGiftingButton {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .bannerContainer {
+    height: 70vh;
+    min-height: 640px;
+    margin-bottom: 72px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/group-gift-welcome-bg-desktop.jpg?v=1617901373);
+    background-position: center left;
+    background-size: cover;
+    background-color: #edd4c8;
+  }
+
+  .mainPanel {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 400px;
+  }
+
+  .label {
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 27px;
+    margin: 12px 0;
+  }
+
+  .textPanel {
+    grid-gap: 8px;
+    margin-top: unset;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .stepDescription {
+    font-size: 16px;
+  }
+}

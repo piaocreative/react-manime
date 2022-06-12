@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  margin-top: 24px;
+  width: 100%;
+  height: 320px;
+  background-image: url(https://d1b527uqd0dzcu.cloudfront.net/mobile/landing-allure-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  position: absolute;
+  max-width: 264px;
+  width: 264px;
+  margin: 0 auto;
+  bottom: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 400px;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 600px;
+    background-image: url(https://d1b527uqd0dzcu.cloudfront.net/desktop/landing-allure-desktop.jpg);
+    /* background-size: contain; */
+    background-position: right;
+  }
+
+  .title {
+    left: 132px;
+    top: 50%;
+    bottom: unset;
+    transform: translate(0, -50%);
+    max-width: 610px;
+    width: 610px;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }  
+}
+
+@media (min-width: 1400px) {
+  .container {
+    margin-top: 46px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,81 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 32px;
+  background: #2C4349;
+  background-image: url('https://cdn.shopify.com/s/files/1/0253/6561/0605/files/join-background.jpg?v=1592577884');
+  color: #fff;
+  padding: 36px 36px 24px;
+}
+
+.dropBubble {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  color: #fff;
+  font-size: 17px;
+  font-family: 'avenirHeavy';
+}
+
+.description {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.subscribed {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  height: 90px;
+}
+
+.inputLine {
+  display: flex;
+  width: 100%;
+  margin-top: 24px;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.actionButton {
+  height: 46px;
+  border: 1px solid #fff;
+  outline: none;
+  color: #2C4349;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 0;
+    width: calc(50% - 32px);
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+
+  .actionButton {
+    height: 46px;
+  }
+
+  .dropBubble {
+    width: 34px;
+    height: 48px;
+  }
+}

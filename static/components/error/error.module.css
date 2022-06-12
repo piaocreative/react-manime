@@ -1,0 +1,61 @@
+.root {
+  width: 100%;
+  background: #F8F1ED;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  height: calc(100vh - 70px);
+}
+
+.title {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 25px;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.description {
+  font-size: 16px;
+  text-align: center;
+  z-index: 1;
+  margin: 60px 0 80px;
+}
+
+.orangeTitle {
+  color: #F7BFA0;
+}
+
+.actionButton {
+  z-index: 1;
+  width: 240px;
+  font-size: 14px;
+  height: 36px;
+}
+
+.bubbleIcon {
+  position: absolute;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40%;
+}
+
+@media (min-width: 468px) {
+  .container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}

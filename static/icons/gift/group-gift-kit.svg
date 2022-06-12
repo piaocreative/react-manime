@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <circle id="lal833k99a" cx="32" cy="32" r="32"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-29 -244) translate(29 244)">
+                <mask id="dxpzh58c5b" fill="#fff">
+                    <use xlink:href="#lal833k99a"/>
+                </mask>
+                <use fill="#EAD0C3" opacity=".227" xlink:href="#lal833k99a"/>
+                <path fill="#FFF" fill-rule="nonzero" stroke="#F7BFA0" stroke-width="1.5" d="M43 39c0-5.464-1.367-17-11-17S21 32.477 21 39v17h22V39z" mask="url(#dxpzh58c5b)"/>
+                <path fill="#FFF" fill-rule="nonzero" stroke="#F7BFA0" stroke-width="1.5" d="M58 46c0-5.464-1.367-17-11-17S36 39.477 36 46v19.333h22V46zM28 46c0-5.464-1.367-17-11-17S6 39.477 6 46v15.305h22V46z" mask="url(#dxpzh58c5b)"/>
+                <path fill="#F7BFA0" d="M11.5 48H52.487V64H11.5z" mask="url(#dxpzh58c5b)"/>
+                <rect width="10.5" height="10.5" x="26.75" y="7.75" fill="#FFF" fill-rule="nonzero" stroke="#F7BFA0" stroke-width="1.5" mask="url(#dxpzh58c5b)" rx="5.25"/>
+                <rect width="10.5" height="10.5" x="41.75" y="14.75" fill="#FFF" fill-rule="nonzero" stroke="#F7BFA0" stroke-width="1.5" mask="url(#dxpzh58c5b)" rx="5.25"/>
+                <rect width="10.5" height="10.5" x="11.75" y="14.75" fill="#FFF" fill-rule="nonzero" stroke="#F7BFA0" stroke-width="1.5" mask="url(#dxpzh58c5b)" rx="5.25"/>
+                <path stroke="#2C4349" stroke-width="1.5" d="M31.815 48.5L31.815 67.37" mask="url(#dxpzh58c5b)"/>
+                <path stroke="#2C4349" stroke-linecap="square" stroke-width="1.5" d="M11.671 48.5L52.5 48.5 52.5 62.259 37.432 70.564 11.671 70.564z" mask="url(#dxpzh58c5b)"/>
+                <g stroke="#2C4349" stroke-width="1.5" mask="url(#dxpzh58c5b)">
+                    <g>
+                        <path fill="#FBF4F1" d="M19.76 5.174c-.35 1.292-.667 2.683-.942 4.136-.161.852-.27 1.693-.387 2.588l-.012.086c-.045.35-.092.708-.144 1.074L18 15l2.51-.603c.356-.085.692-.164 1.03-.252 2.295-.596 4.36-1.167 6.382-2.135.792-.379 1.695-.865 2.383-1.595 2.295-2.438 2.255-6.32-.09-8.653-.059-.059-.119-.116-.18-.172l-.045-.04c-2.367-2.13-5.961-2.057-8.362.168-1.094 1.015-1.545 2.261-1.868 3.456M15.24 5.174c.35 1.292.667 2.683.942 4.136.161.852.27 1.693.387 2.588l.012.086c.045.35.092.708.144 1.074L17 15l-2.51-.603c-.356-.085-.692-.164-1.03-.252-2.295-.596-4.36-1.167-6.382-2.135-.792-.379-1.695-.865-2.383-1.595-2.295-2.438-2.255-6.32.09-8.653.059-.059.119-.116.18-.172l.045-.04c2.367-2.13 5.961-2.057 8.361.168 1.095 1.015 1.546 2.261 1.87 3.456" transform="translate(14 33)"/>
+                        <path d="M34 12L17 15M0 12L17 15" transform="translate(14 33)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

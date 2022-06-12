@@ -1,0 +1,94 @@
+.container {
+  margin-top: 70px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #f4f0f0;
+  text-align: center;
+}
+
+.title {
+  color: #2c4349;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'avenirLight';
+  letter-spacing: 2px;
+  text-align: center;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.boldLabel {
+  font-family: 'avenirBlack';
+}
+
+.qaItem {
+  height: 320px;
+  background-image: url('/static/icons/water-drop.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.question {
+  font-family: 'avenirHeavy';
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  padding: 50px 0 30px;
+  width: 174px;
+}
+
+.answer {
+  max-width: 174px;  
+}
+
+.linkLabel {
+  cursor: pointer;
+  color: #2C4349;
+  text-decoration: underline;
+}
+
+@media(min-width: 1024px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  
+  .title {
+    font-size: 30px;
+    max-width: unset;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .qaItem {
+    background-size: cover;
+    margin: 60px 0;
+  }
+
+  .question {
+    width: 220px;
+    padding: 64px 0 30px;
+    font-size: 18px;
+  }
+
+  .answer {
+    max-width: 220px;
+    line-height: 1.5;
+  }
+
+}

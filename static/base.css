@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'avenirBook';
+  src: url('/static/fonts/AvenirLTStd-Book.otf');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirHeavy';
+  src: url('/static/fonts/AvenirLTStd-Heavy.otf');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirLight';
+  src: url('/static/fonts/AvenirLTStd-Light.otf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirMedium';
+  src: url('/static/fonts/AvenirLTStd-Medium.otf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'avenirBlack';
+  src: url('/static/fonts/AvenirLTStd-Black.otf');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gentiumBasic';
+  src: url('/static/fonts/GenBasR.woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  /* overscroll-behavior: none;
+  overscroll-behavior-y: contain; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* touch-action: pinch-zoom; */
+}
+
+/* body, a, p, div, span, h1, h2, h3, h4, h5, h6, li, ol, ul, text, input {
+} */
+body,
+text,
+input {
+  color: #2c4349;
+  font-family: 'avenirBook';
+}
+
+strong {
+  font-family: 'avenirHeavy';
+}
+
+.react-switch > div {
+  border: 1px solid #2c4349;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+a {
+  color: #2c4349;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.yotpo-icon-profile {
+  visibility: hidden !important;
+}
+
+.yotpo .yotpo-rating-bars .yotpo-product-related-field-score-bar.yotpo-size-bar-offset,
+.yotpo .yotpo-size-bars .yotpo-product-related-field-score-bar.yotpo-size-bar-offset {
+  background-color: #ed7658 !important;
+}
+
+.yotpo .yotpo-size-bars .yotpo-product-related-field-score-bar.yotpo-size-bar-offset {
+  background-color: #5daa8e !important;
+}
+
+.yotpo .yotpo-size-bars .yotpo-product-related-field-score-bar.yotpo-size-bar-offset:nth-child(1) {
+  background-color: #ed7658 !important;
+}
+
+.yotpo .yotpo-size-bars .yotpo-product-related-field-score-bar.yotpo-size-bar-offset:nth-child(3) {
+  background-color: #ed7658 !important;
+}
+
+.yotpo .yotpo-size-bars .yotpo-product-related-field-score-bar.yotpo-size-bar-fit {
+  background-color: #e2e5ec !important;
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper #carousel-top-panel .headline {
+  font-family: 'avenirBook';
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .small-version .right-side {
+  width: unset !important;
+}
+
+.yotpo-reviews-carousel
+  .carousel-display-wrapper
+  .yotpo-carousel
+  .y-slider-container
+  .single-carousel
+  .product-image-container {
+  display: none;
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .big-version .right-side {
+  width: unset !important;
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .carousel-review-body {
+  padding: 4px !important;
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper .stars-container {
+  padding-left: 4px;
+}
+
+.yotpo .standalone-bottomline.star-clickable,
+.yotpo .standalone-bottomline .star-clickable {
+  align-items: center;
+}
+
+.yotpo .standalone-bottomline.star-clickable,
+.yotpo .standalone-bottomline .star-clickable > a {
+  text-decoration: underline !important;
+  margin-left: 8px !important;
+}
+
+.yotpo-slider-title-wrapper {
+  text-align: center !important;
+  text-transform: uppercase !important;
+  margin-bottom: 28px !important;
+}
+
+.yotpo-slider .yotpo-slider-title-wrapper .yotpo-slider-title,
+.yotpo-visual-carousel .yotpo-slider-title-wrapper .yotpo-slider-title,
+.yotpo-pictures-widget .yotpo-slider-title-wrapper .yotpo-slider-title {
+  font-family: 'avenirHeavy' !important;
+  color: #2c4349 !important;
+}
+
+.yotpo .promoted-products-box .yotpo-main-title {
+  text-align: center !important;
+  text-transform: uppercase !important;
+  font-family: 'avenirHeavy' !important;
+  color: #2c4349 !important;
+  font-size: 16px !important;
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
+}
+
+.yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-review-stars {
+  transform: scale(0.85);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f8f1ed;
+}
+
+*::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 4px;
+  background: #f5be9f;
+  border: 1px solid #fff;
+  min-height: 60px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #f5ded1;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.error a {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .yotpo .promoted-products-box .yotpo-main-title {
+    font-size: 20px !important;
+  }
+}

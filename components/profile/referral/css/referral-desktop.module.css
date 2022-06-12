@@ -1,0 +1,152 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.bannerStyle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: #efeee9;
+}
+
+.inputPanel {
+  display: grid;
+  place-items: center;
+  grid-gap: 16px;
+  padding: 24px 80px 50px 0;
+  background-color: #efeee9;
+}
+
+.inviteTitle {
+  margin-top: 28px;
+  font-size: 12px;
+  text-align: center;
+  font-family: avenirHeavy;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.giveAndGetTitle {
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.referralLinkLabel {
+  font-size: 13px;
+}
+
+.shareLinkLine {
+  display: grid;
+  grid-template-columns: auto 96px;
+  width: 100%;
+}
+
+.shareLinkStyle {
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 16px;
+}
+
+.copyButton {
+  outline: none;
+  text-transform: uppercase;
+}
+
+.directShareLabel {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tabLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+  height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.tabLine > div {
+  cursor: pointer;
+  text-align: center;
+}
+
+.selectedTab {
+  border-bottom: 2px solid;
+  font-family: avenirHeavy;
+}
+
+.inputBox {
+  width: 100%;
+  background-color: transparent;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid;
+  outline: none;
+}
+
+.messageStyle {
+  width: 100%;
+  background: transparent;
+  min-height: 100px;
+  padding: 6px;
+  color: #2C4349;
+  font-size: 13px;
+}
+
+.messageStyle:focus {
+  outline: none;
+}
+
+.sendButton {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.copied {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  height: 14px;
+  color: #59aa8e;
+}
+
+.copied svg {
+  width: 14px;
+  height: 14px;
+}
+
+.errorStatusStyle {
+  font-size: 12px;
+  color: #F7BFA0;
+  margin-right: auto;
+}
+
+.responseStyle {
+  display: grid;
+  grid-gap: 20px;
+  font-size: 13px;
+  min-height: 212px;
+  padding: 20px 0;
+}
+
+.shareAgainButton {
+  text-transform: uppercase;
+}

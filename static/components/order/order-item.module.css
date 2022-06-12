@@ -1,0 +1,304 @@
+.container {
+  display: block;
+  background: #FFF9F7;
+  padding: 24px 16px;
+  width: 100%;
+}
+
+.darkBackColor {
+  background: #F8F1ED;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.orderDate {
+  font-size: 15px;
+  font-style: italic;
+  text-align: left;
+}
+
+.column1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.column2 {
+  width: 50%;
+  
+  /* align-items: center; */
+  padding-left: 30px;
+}
+
+.column21 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shopifyTrackingUrl {
+  color: #2C4349;
+}
+
+.shippingStatusLineNarrow {
+  display: flex;
+  padding-top: 16px;
+}
+
+.shippingStatusLine {
+  display: none;
+}
+
+.shippingStatus {
+  font-size: 12px;
+  padding-left: 12px;
+  font-family: 'avenirLight';
+}
+
+.canceledStatus {
+  font-size: 12px;
+  font-family: 'avenirLight';
+}
+
+.resizeManis {
+  font-size: 12px;
+  font-family: 'avenirLight';
+  padding-bottom: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.iconBox {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #979797;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: baseline;
+}
+
+.rightButton {
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.leftButton {
+  font-size: 28px;
+  cursor: pointer;
+  padding-right: 8px;
+  /* float: left; */
+}
+
+.reviewButton {
+  width: 100%;
+  height: 28px;
+  padding: 0 10px;
+  white-space: unset;
+}
+
+.prodIcon {
+  /* width: 33px; */
+  margin: 0 2px;
+  min-width: 33px;
+  height: 33px;
+}
+
+.tableRow {
+  display: flex;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #979797;
+}
+
+.leftCell, .rightCell, .centerCell {
+  width: 33.3%;
+}
+
+.leftCell {
+  text-align: left;
+}
+
+.rightCell {
+  text-align: right;
+}
+
+.centerCell {
+  text-align: center;
+}
+
+.orderDetail {
+  cursor: pointer;
+  font-family: 'avenirLight';
+  text-align: left;
+  font-size: 11px;
+  margin-top: 16px;
+  letter-spacing: 2px;
+}
+
+.orderDetailSymbol {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.detailedTable {
+  margin-top: 36px;
+}
+
+.downArrow {
+  /* margin-left: 16px; */
+  transform: rotate(270deg);
+  cursor: pointer;
+}
+
+.upArrow {
+  /* margin-left: 16px; */
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.totalPrice {
+  margin-top: 16px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.moreDetails {
+  cursor: pointer;
+  margin-top: 40px;
+  font-family: 'avenirLight';
+  letter-spacing: 2px;
+  color: #ff9c63;
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: right;
+
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+.narrowOrderDate, .narrowOrderDetail {
+  display: block;
+}
+
+.desktopOrderDate, .desktopOrderDetail {
+  display: none;
+}
+
+.orderInfo {
+  width: 200px;
+  font-size: 14px;
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.totalRow {
+  border-top: 1px solid #2C4349;
+  font-family: 'avenirBlack';
+}
+
+.canceled {
+  opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 24px 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 60px 36px 48px;
+  }
+
+  .content {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .column2 {
+    width: unset;
+  }
+
+  .column21 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 8px;
+    /* width: unset; */
+    /* flex-grow: 1; */
+  }
+
+  .shippingStatusLineNarrow {
+    display: none;
+  }
+
+  .shippingStatusLine {
+    display: flex;
+    align-items: center;
+  }
+
+  .resizeManis {
+    padding-right: 16px;
+  }
+
+  .column1 {
+    width: 220px;
+    margin-left: 12px;
+  }
+
+  .desktopOrderDate {
+    display: block;
+    font-size: 20px;
+    width: 192px;
+  }
+
+  .desktopOrderDetail {
+    display: block;
+    margin-top: 0;
+  }
+
+  .narrowOrderDate, .narrowOrderDetail {
+    display: none;
+  }
+
+  .resizeManis {
+    padding-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .leftCell {
+    width: 30%;
+  }
+
+  .rightCell {
+    width: 20%;
+  }
+
+  .centerCell {
+    width: 50%;
+    text-align: left;
+  }
+
+  .prodIcon {
+    /* margin-right: 8px; */
+    /* width: 44px; */
+    margin: 0 2px;
+    min-width: 44px;
+    height: 44px;
+  }
+}

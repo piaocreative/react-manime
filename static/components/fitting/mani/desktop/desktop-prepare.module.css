@@ -1,0 +1,43 @@
+.container {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 460px;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 200;
+}
+
+.mainPanel {
+  background-color: #FCF9F7;
+  padding-bottom: 32px;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 28px;
+}
+
+.description {
+  text-align: center;
+  margin-top: -30px;
+  padding: 0 30px 32px;
+  font-size: 13px;
+}
+
+.actionButton {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(44, 67, 73, 0.3);
+  z-index: 150;
+}

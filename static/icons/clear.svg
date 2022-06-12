@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="39px" viewBox="0 0 24 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mask 2</title>
+    <defs>
+        <linearGradient x1="50%" y1="35.6097028%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stopColor="#FAF7F5" offset="0%"></stop>
+            <stop stopColor="#F4ECE7" offset="52.504917%"></stop>
+            <stop stopColor="#F4ECE7" stop-opacity="0.110768138" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="35.0129271%" y1="46.4100081%" x2="65.8417824%" y2="59.4395309%" id="linearGradient-2">
+            <stop stopColor="#EFEFEF" stop-opacity="0.508795892" offset="0%"></stop>
+            <stop stopColor="#F4ECE7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10,0 C3.34671134,0 0,11.0791723 0,19.2664212 C0,27.4536702 1.34926428,35.5314537 10.1037554,35.5314537 C18.8582464,35.5314537 20,25.2904105 20,19.2664212 C20,13.242432 16.6532887,0 10,0 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gallery_Filters_Desktop" transform="translate(-1219.000000, -480.000000)">
+            <g id="Mask-2" transform="translate(1220.000000, 481.000000)">
+                <path d="M11,0 C3.68138247,0 0,11.3395587 0,20.249212 C0,29.1588653 1.48419071,37 11.1141309,37 C20.7440711,37 22,26.8047298 22,20.249212 C22,13.6936943 18.3186175,0 11,0 Z" id="Mask" stroke="url(#linearGradient-1)" stroke-width="0.5"></path>
+                <g id="Group-4" transform="translate(1.000000, 0.840963)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-2)" opacity="0.386393229" xlink:href="#path-3"></use>
+                    <g mask="url(#mask-4)">
+                        <g transform="translate(-3.382353, -1.340963)">
+                            <g id="Group-3">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy" transform="translate(0.000000, 2.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-2" transform="translate(0.000000, 4.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-3" transform="translate(0.000000, 6.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-4" transform="translate(0.000000, 8.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-5" transform="translate(0.000000, 10.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-6" transform="translate(0.000000, 12.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-7" transform="translate(0.000000, 14.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-8" transform="translate(0.000000, 16.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-9" transform="translate(0.000000, 18.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-10" transform="translate(0.000000, 20.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-11" transform="translate(0.000000, 22.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-12" transform="translate(0.000000, 24.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-13" transform="translate(0.000000, 26.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-14" transform="translate(0.000000, 28.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-15" transform="translate(0.000000, 30.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-16" transform="translate(0.000000, 32.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-17" transform="translate(0.000000, 34.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                            <g id="Group-3-Copy-18" transform="translate(0.000000, 36.000000)">
+                                <circle id="Oval-Copy" fill="#F4ECE7" cx="2.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-2" fill="#F4ECE7" cx="4.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-3" fill="#F4ECE7" cx="6.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-4" fill="#F4ECE7" cx="8.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-5" fill="#F4ECE7" cx="10.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-6" fill="#F4ECE7" cx="12.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-7" fill="#F4ECE7" cx="14.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-8" fill="#F4ECE7" cx="16.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-9" fill="#F4ECE7" cx="18.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-10" fill="#F4ECE7" cx="20.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-11" fill="#F4ECE7" cx="22.25" cy="0.25" r="1"></circle>
+                                <circle id="Oval-Copy-12" fill="#F4ECE7" cx="24.25" cy="0.25" r="1"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

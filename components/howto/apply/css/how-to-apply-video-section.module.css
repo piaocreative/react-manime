@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.videoStyle {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -54px;
+}
+
+.textPanelStyle {
+  position: relative;
+  display: grid;
+  grid-gap: 8px;
+  padding: 0 24px;
+}
+
+.descriptionPanel {
+  display: grid;
+  grid-template-columns: 20px auto;
+  grid-gap: 14px;
+  font-size: 14px;
+}
+
+.descriptionPanel span, .descriptionPanel a {
+  font-family: avenirHeavy;
+}
+
+.stepName {
+  font-family: avenirHeavy;
+  letter-spacing: 1px;
+  color: #f7bfa0;
+  background-color: #fff;
+  padding: 6px 8px;
+  margin-right: auto;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.fullName {
+  font-family: gentiumBasic;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.note {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .reverseContainer {
+    flex-direction: row-reverse;
+  }
+
+  .videoStyle {
+    width: 60%;
+    min-width: 60%;
+    margin-bottom: unset;
+    margin-right: 32px;
+  }
+
+  .reverseImageStyle {
+    margin-left: 32px;
+    margin-right: unset;
+  }
+
+  .textPanelStyle {
+    padding: 0;
+    grid-gap: 12px;
+  }
+
+  .stepName {
+    color: #fff;
+    background-color: #f7bfa0;
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .fullName {
+    letter-spacing: 3px;
+    font-size: 36px;
+    white-space: nowrap;
+  }
+
+  .note {
+    font-size: 16px;
+  }
+
+  .descriptionPanel {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .videoStyle {
+    margin-right: 80px;
+  }
+
+  .reverseImageStyle {
+    margin-left: 80px;
+    margin-right: unset;
+  }
+}

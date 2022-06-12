@@ -1,0 +1,268 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.infoPanel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.videoContainer {
+  background-color: #DDEFFF;
+  width: calc(50% - 24px);
+  overflow: hidden;
+  margin: 10px 12px;
+}
+
+.gifImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 193.103448vh;
+  z-index: -1;
+}
+
+.subHeading {
+  font-family: 'AvenirHeavy';
+  font-size: 7px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.17px;
+  text-align: center;
+  color: #2c4349;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.heading {
+  font-family: 'gentiumBasic';
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c4349;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redPercentage {
+  font-family: 'AvenirHeavy';
+  font-size: 24px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #cf211b;
+}
+
+.mobileHidden {
+  display: none;
+}
+
+.customList {
+  margin-left: -5px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding: 0px;
+  list-style: none;
+}
+
+.customListItem {
+  display: flex;
+  height: 14px;
+  object-fit: contain;
+  font-family: 'Avenir';
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2c4349;
+
+}
+.customListItem::before {
+  content: '';
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  background-image: url(https://d1b527uqd0dzcu.cloudfront.net/web/design/mani-list-item.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right:0.5em;
+}
+
+.title {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px auto 8px;
+  font-family: 'gentiumBasic';
+  max-width: 80%;
+}
+
+.description {
+  cursor: pointer;
+  font-size: 12px;
+  max-width: 148px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imagePanel {
+  display: none;
+  padding: 10px 24px;
+  flex-grow: 1;
+}
+
+.outlinedButton {
+  margin: 24px auto 0;
+}
+
+.viewMore1 {
+  margin-top: 10px;
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-bottom: 40px;
+  }
+
+  .videoContainer {
+    width: 75%;
+  }
+
+  .gifImage {
+    width: 100%;
+    height: 190.462963vh;
+  }
+
+  .bottomContainer {
+    align-items: start;
+  }
+
+  .subHeading {
+    font-family: 'AvenirHeavy';
+    font-size: 12px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #2c4349;
+    margin-bottom: 8px;
+  }
+
+  .heading {
+    font-family: 'gentiumBasic';
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c4349;
+  }
+
+  .redPercentage {
+    font-family: 'AvenirHeavy';
+    font-size: 30px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 4px;
+    color: #cf211b;
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  .mobileHidden {
+    display: block;
+    font-family: 'AvenirHeavy';
+    font-size: 14px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.17px;
+    text-align: left;
+    color: #2c4349;
+  }
+
+  .customList {
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .customListItem {
+    height: 24px;
+    object-fit: contain;
+    font-family: 'AvenirLight';
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2c4349;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .title {
+    font-size: 24px;
+    margin: 52px auto 20px;
+    max-width: 200px;
+  }
+
+  .description {
+    font-size: 17px;
+    max-width: 208px;
+  }
+
+  .imagePanel {
+    display: flex;
+  }
+
+  .viewMore1 {
+    margin-top: 16px;
+    font-size: 17px;
+  }
+}

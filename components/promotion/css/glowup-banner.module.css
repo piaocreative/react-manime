@@ -1,0 +1,36 @@
+.container {
+  cursor: pointer;
+  background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/glowup-banner-mobile-v3.jpg?v=1607107114);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    height: 256px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 156px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/glowup-banner-desktop-v3.jpg?v=1607107033);
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .container {
+    height: 172px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    height: 200px;
+  }
+}

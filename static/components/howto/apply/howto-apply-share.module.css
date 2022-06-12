@@ -1,0 +1,92 @@
+.container {
+  margin-top: 20px;
+  height: 70vh;
+  background-image: url('https://d1b527uqd0dzcu.cloudfront.net/mobile/howto/howto-apply-share-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textPanel {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 17px;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 13px;
+  letter-spacing: 1px;
+  max-width: 200px;
+}
+
+.buttonPanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.actionButton {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 40px;
+    height: 50vh;
+    background-position: right;
+    background-image: url('https://d1b527uqd0dzcu.cloudfront.net/web/howto/howto-apply-share.jpg');
+  }
+
+  .content {
+    width: 472px;
+    height: 60%;
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  .buttonPanel {
+    flex-direction: row;
+    height: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .actionButton {
+    min-width: 200px;
+  }
+
+  .content {
+    width: 472px;
+    height: 60%;
+    padding: 24px;
+    margin-right: 50%;
+  }
+}

@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titleContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 32px;
+  font-size: 20px;
+  font-family: 'avenirLight';
+  letter-spacing: 2px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdf2ec;
+  padding: 0px 14px 140px;
+  min-height: calc(var(--vh, 1vh) * 100 - 20px);
+}
+
+.subTitle {
+  position: relative;
+  z-index: 1;
+  font-family: 'avenirBlack';
+  text-align: center;
+  font-size: 14px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  padding-left: 12px;
+  margin: 12px auto 0;
+  max-width: 260px;
+}
+
+.buttonLine {
+  position: fixed;
+  bottom: 20px;
+  z-index: 10;
+  width: calc(100% - 80px);
+}
+
+.fingerImage {
+  margin: auto;
+  padding: 12px 0;
+  width: 101px;
+  min-height: 194px;
+}
+
+.buttonLine > button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+
+  .fingerImage {
+    padding: 40px 0;
+  }
+
+  .buttonLine {
+    position: unset;
+    width: 100%;
+  }
+}

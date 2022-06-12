@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  background: #fdf3ed;
+  padding: 20px 12px 80px;
+}
+
+.mainTitle {
+  font-family: 'avenirHeavy';
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.mainDescription {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 6px;
+}
+
+.oneItem {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.nailStyle {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+.retakeButton {
+  width: 100%;
+  margin: 8px 0 12px;
+}
+
+.fingerTitle {
+  font-family: 'avenirMedium';
+  text-align: center;
+  padding: 12px 0 8px;
+}
+
+.submitButton {
+  position: fixed;
+  bottom: 32px;
+  left: 44px;
+  width: calc(100% - 88px);
+  margin: 0 auto;
+}

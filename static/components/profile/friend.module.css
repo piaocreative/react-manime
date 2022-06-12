@@ -1,0 +1,26 @@
+.emailButton {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.message {
+  width: 100%;
+  background: transparent;
+  min-height: 100px;
+  padding: 6px;
+  color: #2C4349;
+  font-size: 14px;
+}
+
+.message:focus {
+  outline: none;
+}
+
+.actionButton {
+  margin: 0 auto 50px;
+}
+
+.checkBox {
+  margin-right: 4px;
+  margin-bottom: 2px;
+}

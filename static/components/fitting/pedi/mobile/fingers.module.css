@@ -1,0 +1,58 @@
+.container {
+  background: #FCF9F7;
+  padding: 18px;
+  /* width: 100%; */
+  width: 480px;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  color: #2C4349;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  font-size: 13px;
+  /* font-family: gentiumBasic; */
+  color: #2C4349;
+}
+
+.caution {
+  margin-bottom: 8px;
+}
+
+.gifImage {
+  margin-top: 16px;
+  width: 100%;
+  height: calc(100vh - 280px);
+  object-fit: cover;
+}
+
+.retakeContinueContainer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+}
+
+.retakeConfirmMessage {
+  padding-top: 13px;
+}
+
+.lastConfirm {
+  font-size: 13px;
+  /* font-family: gentiumBasic; */
+  color: #2C4349;
+  padding: 8.8px 0;
+  text-align: center;
+}

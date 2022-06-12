@@ -1,0 +1,23 @@
+.symbol {
+  width: 30px;
+  height: 45px;
+  margin: 0 10px;
+}
+
+.labelLine {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 8px;
+  padding: 0 10px;
+}
+
+.labelLine > div {
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .labelLine > div {
+    font-size: 12px;
+  } 
+}

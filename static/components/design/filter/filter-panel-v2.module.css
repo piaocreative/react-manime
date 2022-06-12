@@ -1,0 +1,147 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90%;
+  padding: 18px;
+  z-index: 200;
+  background-color: #F6F6F6;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 1px 1px 3px 0px rgba(97,97,97,0.6);
+}
+
+.colorRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.bubbleItem {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.colorIcon {
+  height: 28px;
+}
+
+.colorIcon:hover {
+  width: 33px;
+  height: 48px;
+}
+
+.colorName {
+  position: absolute;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  left: 50%;
+  top: 32px;
+}
+
+.iconButton {
+  width: 48%;
+  height: 48px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  justify-content: left;
+  border: 2px solid #fff;
+  padding: 0 8px !important;
+  text-transform: uppercase;
+}
+
+/* .iconButton:hover {
+  border: 2px solid #2C4349;
+} */
+
+.iconButtonIcon {
+  margin-right: 12px;
+  height: 36px;
+  width: 22px;
+}
+
+.selectedButton {
+  border: 2px solid #2C4349;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.applyButton {
+  margin-top: 8px;
+  width: calc(50% - 6px);
+}
+
+.closeButton {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  font-size: 40px;
+  color: #fff;
+}
+
+@media (min-width: 480px) {
+  .container {
+    position: absolute;
+    top: 100%;
+    width: 480px;
+    padding: 20px 18px;
+    min-height: 587px;
+    z-index: 50;
+  }
+
+  .button {
+    width: 30%;
+  }
+
+  .iconButton {
+    width: 32%;
+    padding: 0 14px;
+  }
+
+  .colorIcon {
+    height: unset;
+    width: 31px;
+    height: 45px;
+  }
+
+  .colorName {
+    top: 48px;
+  }
+
+  .overlay {
+    z-index: 1;
+    background: unset;
+  }
+
+  .closeButton {
+    display: none;
+  }
+
+  .colorRow {
+    margin-bottom: 24px;
+  }
+
+  
+  .applyButton {
+    margin-top: 18px;
+  }
+}

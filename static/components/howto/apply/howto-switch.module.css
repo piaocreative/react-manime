@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+.actionButton {
+  width: calc(50% - 8px);
+}
+
+@media (min-width: 768px) {
+  .container {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .actionButton {
+    width: 240px;
+    margin: 0 20px;
+  }
+}

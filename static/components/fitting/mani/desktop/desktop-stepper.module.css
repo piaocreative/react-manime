@@ -1,0 +1,11 @@
+.desktopStepper {
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  margin-top: 36px;
+}
+
+.stepBar {
+  height: 8px;
+  background-color: #F7BFA0;
+}

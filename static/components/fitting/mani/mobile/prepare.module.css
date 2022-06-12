@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titleContainer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fdf2ec; */
+  font-family: 'avenirLight';
+  letter-spacing: 2px;
+}
+
+.contentContainer {
+  background-color: #fdf2ec;
+  padding: 0px 14px 100px;
+  min-height: calc(var(--vh, 1vh) * 100 - 20px);
+}
+
+.grabCard {
+  font-size: 14px;
+  text-align: center;
+}
+
+.logoContainer {
+  position: relative;
+  padding-top: 77%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+  margin-bottom: -12px;
+  margin-left: 14px;
+}
+
+.logoContainer > img {
+  position: absolute;
+  top: 0;
+  width: 84%;
+  z-index: 0;
+}
+
+.cardItem {
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 14px;
+  min-width: 14px;
+}
+
+.cardTitle {
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.subTitle {
+  position: relative;
+  z-index: 1;
+  font-family: 'avenirBlack';
+  text-align: center;
+  font-size: 14px;
+}
+
+.subDescription {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  margin: 8px 0 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  padding-left: 12px;
+  margin-top: 12px;
+}
+
+.whyCard {
+  max-width: 280px;
+  padding-right: 12px;
+  margin: 8px auto 0;
+}
+
+.floatButton {
+  position: fixed !important;
+  bottom: 24px;
+  width: calc(100% - 80px);
+  max-width: 480px;
+  height: 40px;
+  z-index: 200;
+  background-color: #2C4349 !important;
+  color: #fff;
+  font-size: 14px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  text-transform: uppercase;
+}
+
+.highLight {
+  font-family: 'avenirBlack';
+  color: #2C4349;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}

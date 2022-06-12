@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  background: #2C4349;
+  height: 320px;
+  text-align: center;
+  padding: 0 36px;
+}
+
+.title {
+  font-size: 35px;
+  color: #fff;
+  padding: 42px 0 12px;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 4px;
+}
+
+.actionButtonLine {
+  display: flex;
+  margin-top: 20px;
+  /* margin-right: 36px; */
+  justify-content: center;
+}
+
+.finishButton {
+  /* margin-left: 20px; */
+  width: calc(20% - 28px);
+}
+
+.howToTransfer {
+  cursor: pointer;
+  color: #F7BFA0;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 20px;
+}

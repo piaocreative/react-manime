@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100% + 24px);
+  height: 60px;
+  font-size: 14px;
+}
+
+.container > div {
+  color: #F7BFA0;
+}
+
+.topTitle {
+  position: absolute;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  letter-spacing: 1px;
+}
+
+.backButton {
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 80px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,76 @@
+.infoPanel {
+  padding: 10px 12px;
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.title {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px auto 8px;
+  font-family: 'gentiumBasic';
+  max-width: 80%;
+}
+
+.description {
+  font-size: 12px;
+  max-width: 148px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imagePanel {
+  display: none;
+  padding: 10px 24px 45px;
+  flex-grow: 1;
+}
+
+.outlinedButton {
+  margin: 24px auto 0;
+}
+
+.viewMore1 {
+  margin-top: 10px;
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: center;
+}
+
+.whiteColor div, .whiteColor a {
+  color: #fff
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-bottom: 40px;
+  }
+
+  .infoPanel {
+    padding: 10px 12px;
+    width: 25%;
+  }
+
+  .title {
+    font-size: 24px;
+    margin: 52px auto 20px;
+    max-width: 200px;
+  }
+
+  .description {
+    font-size: 17px;
+    max-width: 262px;
+  }
+
+  .imagePanel {
+    display: flex;
+  }
+
+  .viewMore1 {
+    margin-top: 16px;
+    font-size: 17px;
+  }
+}

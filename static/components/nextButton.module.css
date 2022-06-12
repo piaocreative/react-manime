@@ -1,0 +1,6 @@
+.nextButton:hover {
+    opacity: 0.3;
+}
+.nextButton:active {
+    opacity: 1;
+}

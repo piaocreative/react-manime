@@ -1,0 +1,101 @@
+.getSetButton {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.giftMomButton {
+  margin-left: 28px;
+  border: 1px solid #2c4349;
+}
+
+.darkText {
+  color: #2C4349;
+}
+
+.imageStyle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tempLanding {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.toxinFree {
+  width: 32px;
+}
+
+.crueltyFree {
+  width: 40px;
+}
+
+.discoverButton {
+  margin-top: 8px;
+}
+
+.manimeLogo {
+  width: 90px;
+}
+
+.summerButton {
+  padding: 0 12px;
+  text-transform: uppercase;
+}
+
+.summerPediButton {
+  margin-left: 20px;
+  padding: 0 12px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .imageStyle {
+    object-position: right;
+  }
+
+  .tempLanding {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .getMomButton {
+    margin-left: 36px;
+  }
+
+  .toxinFree {
+    width: 42px;
+  }
+
+  .crueltyFree {
+    width: 52px;
+  }
+
+  .discoverButton {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+  }
+
+  .manimeLogo {
+    width: 96px;
+  }
+}
+
+@media (min-width: 768px) {
+  .summerButton {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .summerPediButton {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+}

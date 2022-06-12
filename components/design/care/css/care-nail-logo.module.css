@@ -1,0 +1,21 @@
+
+.careNailText {
+  margin-top: 16px;
+}
+
+.careNailIcon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .careNailText {
+    margin-top: 0px;
+  }
+
+  .careNailIcon {
+    display: block;
+    width: 120px;
+    height: 134px;
+    margin-left: 30px;
+  }
+}

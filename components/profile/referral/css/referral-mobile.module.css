@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-gap: 12px;
+  place-items: center;
+  background-color: #f4f4f4;
+  margin-top: -40px;
+}
+
+.content {
+  padding: 16px;
+  display: grid;
+  grid-gap: 12px;
+  place-items: center;
+}
+
+.inviteTitle {
+  margin-top: 28px;
+  font-size: 12px;
+  text-align: center;
+  font-family: avenirHeavy;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.giveAndGetTitle {
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.bannerStyle {
+  object-fit: contain;
+  width: 100%;
+}
+
+.referralLinkLabel {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.shareLinkStyle {
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 16px;
+}
+
+.actionLine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  width: 100%;
+}
+
+.actionButton {
+  outline: none;
+  text-transform: uppercase;
+}
+
+.copied {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  height: 14px;
+  color: #59aa8e;
+  margin-right: auto;
+  width: calc(50% - 8px);
+}
+
+.copied svg {
+  width: 14px;
+  height: 14px;
+}

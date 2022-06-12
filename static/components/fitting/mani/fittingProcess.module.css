@@ -1,0 +1,16 @@
+.mainFitContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f0e9;
+
+}
+
+@media (min-width: 768px) {
+    .mainFitContainer {
+        padding: 0px;
+    }
+}
+
+.mobileFitContainer {
+    min-height: calc(var(--vh, 1vh) * 100 );
+}

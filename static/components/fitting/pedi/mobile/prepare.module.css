@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titleContainer {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background-color: #f8f1ed;
+}
+
+.titleBackImage {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: contain;
+}
+
+.prepareCardImage {
+  position: absolute;
+  transform: tranlate(100%, 0%);
+  right: 0;
+  top: 136px;
+}
+
+.title {
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  top: 40px;
+  left: 50%;
+  font-size: 24px;
+  color: #2C4349;
+}
+
+.descriptionContainer {
+  width: 100%;
+  height: 360px;
+  padding: 80px 18px 18px 36px;
+  text-align: center;
+  background: #F9F9F9;
+  font-size: 14px;
+}
+
+.nextButton {
+  width: 100%;
+  height: 32px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    /* flex-direction: row; */
+    width: 480px;
+  }
+}

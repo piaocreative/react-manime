@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    web_app:
+        build: .
+        networks:
+            - manime-net
+    nginx:
+        build: ./nginx
+        ports:
+            - "80:80"
+        networks:
+            - manime-net
+
+networks:
+    manime-net:

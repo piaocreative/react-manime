@@ -1,0 +1,76 @@
+.container {
+  position: fixed;
+  right: 0;
+  display: none;
+  align-items: stretch;
+  background: #F0F0F0;
+  padding: 30px;
+  border-top: 1px solid #F7BFA0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  z-index: 300;
+  text-transform: uppercase;
+}
+
+.oneColumn {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 100%;
+  border-left: 1px solid #F7BFA0;
+  padding-left: 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.menuItem {
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.menuItem:hover {
+  transition: ease-out 0.3s;
+  transform: translateY(-1px);
+  color: #F7BFA0;
+}
+
+.videoContainer {
+  position: relative;
+  margin-left: auto;
+  width: 320px;
+}
+
+.playerWrapper {  
+  position: relative;
+  padding-top: 55.25%;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.learnMenuBanner {
+  cursor: pointer;
+  width: 180px;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .container {
+    right: 70px;
+    display: flex;
+    width: 600px;
+    height: 240px;
+  }
+
+  .playerWrapper {
+    /* width: 312px;
+    height: 180px; */
+  }
+
+  .learnMenuBanner {
+    width: 312px;
+  }
+}

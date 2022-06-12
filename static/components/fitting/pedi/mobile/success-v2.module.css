@@ -1,0 +1,78 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 120px);
+}
+
+.container {
+  position: relative;
+  background-color: #F8F1ED;
+  background-image: url('/static/icons/light-apricot-bubble.svg');
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: calc(100% - 60px);
+  padding: 18px 18px 20px 18px;
+  width: 100%;
+  color: #2C4349;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  font-family: 'avenirLight';
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.rowContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backButton {
+  position: absolute;
+  left: 12px;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 20px;
+}
+
+.backButton:hover {
+  padding: 6px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #F7BFA0;
+}
+
+.fittingSuccessLogo {
+  height: 260px;
+}
+
+.backImage {
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: calc(100% - 32px);
+  left: 50%;
+  top: 60px;
+
+}
+
+@media (min-width: 480px) {
+  .root {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

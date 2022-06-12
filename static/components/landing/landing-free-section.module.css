@@ -1,0 +1,118 @@
+.container {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 48px;
+}
+
+.titleLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -27px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px auto 16px;
+  max-width: 290px;
+}
+
+.crueltyDescription {
+  max-width: 272px;
+}
+
+.toxinFree {
+  background:#e1e5dc;
+  padding: 0 28px 28px;
+}
+
+.crueltyFree {
+  background: #e3e7ef;
+  padding: 0 28px 28px;
+}
+
+.freeList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.freeListItem {
+  text-decoration-line: line-through;
+  font-family: 'avenirHeavy';
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.crueltyFreeLogo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+
+  .titleLine {
+    flex-direction: row;
+    margin-top: -34px;
+  }
+
+  .logo {
+    width: 68px;
+    height: 68px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-top: unset;
+    margin-left: 20px;
+  }
+
+  .description {
+    max-width: 472px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 32px auto 40px;
+  }
+
+  .crueltyDescription {
+    max-width: 456px;
+  }
+  
+  .freeList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .freeListItem {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .toxinFree, .crueltyFree {
+    padding: 0 28px 56px;
+  }
+
+  .crueltyFreeLogo {
+    display: block;
+    width: 64px;
+    height: 48px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,130 @@
+.container {
+  overflow: hidden;
+}
+
+.orangePanel {
+  position: relative;
+  z-index: 1;
+  height: 60vh;
+  width: 100%;
+  background-color: #F7BFA0;
+  overflow: hidden;
+}
+
+.grayPanel {
+  width: 100%;
+  background-color: #F8F1ED;
+  position: relative;
+}
+
+.title {
+  position: relative;
+  color: white;
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 32px;
+  z-index: 1;
+}
+
+.description {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  padding: 0 18%;
+  top: 20%;
+  font-size: 16px;
+}
+
+.bubbleContent {
+  position: relative;
+  width: 100%;
+}
+
+.buttonPanel {
+  /* position: absolute; */
+  margin: 30px 0px;
+  /* width: 100%; */
+  z-index: 1;
+  bottom: 80px;
+}
+
+.fullWidth {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.bubbleBack {
+  width: 100%;
+}
+
+.bubbleImage {
+  width: 100%;
+  /* position: absolute; */
+  margin-top: -30%;
+  z-index: 1;
+}
+
+.userImage {
+  right: -20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+@media (min-width: 480px) {
+  .orangePanel {
+    height: 60vh;
+  }
+
+  .bubbleImage {
+    width: 100%;
+    /* position: absolute; */
+    margin-top: -50%;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    padding-top: 36px;
+    font-size: 35px
+  }
+
+  .orangePanel {
+    height: 120px;
+    overflow: unset;
+  }
+
+  .grayPanel {
+    height: calc(100vh - 300px);
+  }
+
+  .bubbleContent {
+    width: 60%;
+    padding: 0 12px;
+  }
+
+  .bubbleImage {
+    height: 100%;
+  }
+
+  .userImage {
+    right: -20%;
+    height: calc(100vh - 100px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .userImage {
+    right: 0;
+  }
+
+  .bubbleContent {
+    width: 60%;
+    padding: 0 10%;
+  }
+}

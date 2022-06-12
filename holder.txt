@@ -1,0 +1,460 @@
+const express = require('express');
+const asyncHandler = require('express-async-handler');
+const uuid = require('node-uuid');
+const _ = require('lodash');
+const moment = require('moment');
+const sequelizeQuerystring = require('sequelize-querystring');
+const httpStatus = require('http-status');
+const idempotency = require('@royalsix/express-idempotency');
+const models = require('../models/index');
+const SlackUtil = require('./../utils/slack-util');
+const APIError = require('../helpers/api-error-helper');
+const
+  {
+    validate,
+    prepareUpdateByColumnPayloadForValidation,
+    omitRequiredFields,
+  } = require('../helpers/validator-helper');
+const ordersSchema = require('../schemas/orders-schema');
+const { logger } = require('../helpers/logger-helper');
+const awsSqsHelper = require('../helpers/aws-sqs-helper');
+const createShopifyOrderHelper = require('../helpers/create-shopify-order-helper');
+
+const router = express.Router();
+const sqs = sequelizeQuerystring.withSymbolicOps(models.Sequelize);
+
+router.post('/orders/create',
+  validate({ body: omitRequiredFields(ordersSchema, ['orderId']) }),
+  asyncHandler(async (req, res) => {
+    const order = await models.Orders.create({
+      orderId: uuid.v4(),
+      nailProductId: req.body.nailProductId,
+      groupOrderId: req.body.groupOrderId,
+      dateCreated: moment.utc().toDate(),
+      deliveryDate: moment.utc(req.body.deliveryDate).toDate(),
+      nailShape: req.body.nailShape,
+      nailLength: req.body.nailLength,
+      comments: req.body.comments,
+      orderStatus: req.body.orderStatus,
+      listedPrice: req.body.listedPrice,
+      discount: req.body.discount,
+      // fulfillmentStatus: req.body.fulfillmentStatus,
+      visible: req.body.visible,
+      shopifySku: req.body.shopifySku,
+      shopifyPrice: req.body.shopifyPrice,
+      profileId: req.body.profileId,
+    });
+
+    return res.send({ orderId: order.orderId });
+  }));
+
+router.get('/orders/read/:id',
+  asyncHandler(async (req, res) => {
+    const order = await models.Orders.findOne({ where: { orderId: req.params.id } });
+    return res.send(order);
+  }));
+
+router.post('/orders/update',
+  validate({ body: _.omit(ordersSchema, ['required']) }),
+  asyncHandler(async (req, res) => {
+    await models.Orders.update(
+      {
+        nailProductId: req.body.nailProductId,
+        groupOrderId: req.body.groupOrderId,
+        dateCreated: req.body.dateCreated,
+        deliveryDate: req.body.deliveryDate,
+        nailShape: req.body.nailShape,
+        nailLength: req.body.nailLength,
+        comments: req.body.comments,
+        orderStatus: req.body.orderStatus,
+        listedPrice: req.body.listedPrice,
+        discount: req.body.discount,
+        // fulfillmentStatus: req.body.fulfillmentStatus,
+        visible: req.body.visible,
+        shopifySku: req.body.shopifySku,
+        shopifyPrice: req.body.shopifyPrice,
+      },
+      { where: { orderId: req.body.orderId } },
+    );
+
+    return res.status(200).send();
+  }));
+
+
+router.get('/orders/cms/read',
+  asyncHandler(async (req, res) => {
+    const reviewProductList = await models.Orders.findAll({
+      where: req.query.filter ? sqs.find(req.query.filter) : {},
+      order: req.query.sort ? sqs.sort(req.query.sort) : [],
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          include: [
+            { model: models.Users, required: true },
+          ],
+        },
+      ],
+      offset: req.query.offset,
+      limit: req.query.limit,
+    });
+
+    return res.send(reviewProductList);
+  }));
+
+router.get('/orders/cms/read/combined',
+  asyncHandler(async (req, res) => {
+    const groupOrderList = await models.GroupOrders.findAll({
+      where: req.query.filter ? sqs.find(req.query.filter) : {},
+      order: req.query.sort ? sqs.sort(req.query.sort) : [],
+      include: [
+        {
+          model: models.Orders,
+          required: true,
+          include: [
+            {
+              model: models.NailProducts,
+              required: true,
+            },
+          ],
+        },
+        {
+          model: models.Users,
+          required: true,
+        },
+      ],
+    });
+
+    return res.send(groupOrderList);
+  }));
+
+router.get('/orders/production/read',
+  async (req, res) => {
+    const orderList = await models.Orders.findAll({
+      where: req.query.filter ? sqs.find(req.query.filter) : {},
+      order: req.query.sort ? sqs.sort(req.query.sort) : [],
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          include: [
+            {
+              model: models.Users,
+              where: req.query.userFilter ? sqs.find(req.query.userFilter) : {},
+              required: true,
+            },
+          ],
+        },
+      ],
+      offset: req.query.offset,
+      limit: req.query.limit,
+    });
+    return res.send(orderList);
+  });
+
+router.post('/orders/update/column',
+  prepareUpdateByColumnPayloadForValidation,
+  validate({
+    updateByColumnPayloadForValidation: _.omit(
+      ordersSchema,
+      ['required'],
+    ),
+  }),
+  asyncHandler(async (req, res) => {
+    const { columnName } = req.body;
+    const { columnValue } = req.body;
+    const { orderId } = req.body;
+
+    const updatePayload = {};
+    updatePayload[columnName] = columnValue;
+    await models.Orders.update(
+      updatePayload,
+      { where: { orderId } },
+    );
+
+    return res.send();
+  }));
+
+router.get('/statistic',
+  asyncHandler(async (req, res) => {
+    // todo: using q.all
+
+    const { Op } = models.Sequelize;
+    // counter: invalidshippinginfo
+    // condition: !order.GroupOrder.shippingAddress || order.GroupOrder.shippingAddress.length === 0
+    const invalidShippingInfoOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          where: {
+            [Op.or]: [
+              {
+                shippingAddress: { [Op.eq]: null },
+              },
+              {
+                shippingAddress: '',
+              },
+            ],
+          },
+          include: [
+            {
+              model: models.Users,
+              required: true,
+              where: { },
+            },
+          ],
+        },
+      ],
+    });
+
+    // counter: tobereviewed
+    // condition: order.GroupOrder.User.fitStatus === 'fittedByDesigner'
+    const toBeReviewedOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          where: {},
+          include: [
+            {
+              model: models.Users,
+              required: true,
+              where: {
+                fitStatus: 'fittedByDesigner',
+              },
+            },
+          ],
+        },
+      ],
+    });
+
+    // counter: tobeprinted
+    // condition: order.GroupOrder.User.fitStatus === 'fittingValidated'
+    const toBePrintedOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          where: {},
+          include: [
+            {
+              model: models.Users,
+              required: true,
+              where: {
+                fitStatus: 'fittingValidated',
+              },
+            },
+          ],
+        },
+      ],
+    });
+
+    // counter:  invalidpictures
+    // condition: order.GroupOrder.User.statusLeftFingers || !order.GroupOrder.User.statusLeftThumb || !order.GroupOrder.User.statusRightFingers || !order.GroupOrder.User.statusRightThumb || !order.GroupOrder.User.statusSide
+    const invalidPicturesOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          where: {},
+          include: [
+            {
+              model: models.Users,
+              required: true,
+              where: {
+                [Op.or]: [
+                  { statusLeftFingers: { [Op.eq]: null } },
+                  { statusLeftThumb: { [Op.eq]: null } },
+                  { statusRightFingers: { [Op.eq]: null } },
+                  { statusRightThumb: { [Op.eq]: null } },
+                  { statusSide: { [Op.eq]: null } },
+                ],
+              },
+            },
+          ],
+        },
+      ],
+    });
+
+    const toBeFittedOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          where: {},
+          include: [
+            {
+              model: models.Users,
+              required: true,
+              where: {
+                fitStatus: 'toBeFitted', // todo
+              },
+            },
+          ],
+        },
+      ],
+    });
+
+    const toBeRefittedOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+      include: [
+        {
+          model: models.GroupOrders,
+          required: true,
+          where: {},
+          include: [
+            {
+              model: models.Users,
+              required: true,
+              where: {
+                fitStatus: 'toBeRefitted', // todo
+              },
+            },
+          ],
+        },
+      ],
+    });
+
+    const unfulfilledOrderCount = await models.Orders.count({
+      where: { fulfillmentStatus: { [Op.eq]: null } },
+    });
+
+    return res.send({
+      unfulfilledOrderCount,
+      toBePrintedOrderCount,
+      toBeReviewedOrderCount,
+      toBeFittedOrderCount,
+      toBeRefittedOrderCount,
+      invalidPicturesOrderCount,
+      invalidShippingInfoOrderCount,
+
+      // unfulfilled: {count}
+      // toBePrinted: {count}
+      // toBeReviewed: {count}
+      // toBeFitted: {count}
+      // toBeRefitted: {count}
+      // invalidPics: {count}
+    });
+  }));
+
+router.post('/shopify/order',
+  idempotency(),
+  asyncHandler(async (req, res) => {
+    sendSlackAlertIfProfileIdIsMissing(req);
+
+    const createShopifyOrderParams = req.body;
+    try {
+      const createShopifyOrderResponse = await createShopifyOrderHelper.parseParamsAndCreateShopifyOrderWithRetry(createShopifyOrderParams, req);
+
+      res.body = createShopifyOrderResponse;
+      res.statusCode = 200;
+      res.send(createShopifyOrderResponse);
+    } catch (createShopifyOrderError) {
+      const errorResponse = _.pick(createShopifyOrderError, ['attemptNumber', 'retriesLeft', 'message']);
+      res.body = errorResponse;
+      res.statusCode = 500;
+      res.send(errorResponse);
+
+      const logPayload = JSON.stringify(
+        {
+          logDescription: 'shopifyCreateOrderError',
+          logInfo: 'failedResponse',
+          err: createShopifyOrderError,
+          req: _.pick(req, ['url', 'method', 'query', 'params', 'body']),
+        },
+      );
+      logger.info(logPayload);
+    }
+  }));
+
+function sendSlackAlertIfProfileIdIsMissing(req) {
+  // send the alert only if prod env
+  if (process.env.NODE_ENV !== 'production') {
+    return;
+  }
+
+  const noteAttributeItem = _.find(req.body.noteAttributes, { name: 'multipackId' });
+  const multipackId = _.get(noteAttributeItem, 'value');
+  if (multipackId) {
+    // don't send the alert if it's a multipack organizer order
+    return;
+  }
+
+  // send the alert
+  req.body.lineItems.edges.map((lineItem) => {
+    const customAttributes = _.get(lineItem, 'node.customAttributes');
+    const profileIdAttribute = _.find(customAttributes, { key: 'profileId' });
+    const profileId = _.get(profileIdAttribute, 'value');
+
+    const productType = _.get(lineItem, 'node.variant.product.productType');
+    const productTypeLowerCase = _.toLower(productType);
+
+    if (!profileId && productTypeLowerCase && !['other', 'essentials'].includes(productTypeLowerCase)) { // todo: extract possible productTypes to a constant
+      SlackUtil.postMessage({
+        channelName: '#alerts-and-warnings',
+        body: JSON.stringify({
+          logDescription: 'profilesNotifications',
+          logInfo: 'warning: no profileId and the productType is not other or essentials. No worries, the back end automatically sets it.',
+          orderInfo: _.pick(req.body, ['email', 'totalPrice']),
+          body: `\`\`\`${JSON.stringify(req.body, null, 1)}\`\`\``,
+        }),
+        sendToLogger: true,
+      });
+    }
+
+    return null;
+  });
+}
+
+router.post('/sqs/shopify/order',
+  idempotency(),
+  asyncHandler(async (req, res) => {
+    const createShopifyOrderMessageQueue = JSON.stringify(req.body);
+    const idempotencyKeyFullLength = req.get('Idempotency-Key');
+    const idempotencyKey = idempotencyKeyFullLength.substring(0, 127);
+    sendSlackAlertIfProfileIdIsMissing(req);
+
+
+    try {
+      const addMessageToQueueResult = await awsSqsHelper.addMessageToQueue({
+        messageString: createShopifyOrderMessageQueue,
+        messageDeduplicationId: idempotencyKey,
+
+        messageGroupId: awsSqsHelper.createShopifyOrderMessageGroupId,
+        queueUrl: awsSqsHelper.createShopifyQueueUrl,
+      });
+
+      logger.info(
+        JSON.stringify(
+          {
+            logDescription: 'shopifyCreateOrderLog',
+            logInfo: 'the order was added to the queue',
+            req: _.pick(req, ['url', 'method', 'query', 'params', 'body']),
+          },
+        ),
+      );
+    } catch (awsSqsError) {
+      SlackUtil.postMessage({
+        channelName: '#alerts',
+        body: JSON.stringify({
+          logDescription: 'shopifyCreateOrderErrorSqsAddToQueue',
+          logInfo: 'can\'t add the shopify order to the queue',
+          err: awsSqsError,
+        }),
+        sendToLogger: true,
+      });
+
+      throw new APIError('can\'t add the order to the queue', httpStatus.INTERNAL_SERVER_ERROR, true);
+    }
+
+    return res.send();
+  }));
+
+
+module.exports = router;

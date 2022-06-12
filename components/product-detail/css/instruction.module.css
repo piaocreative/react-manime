@@ -1,0 +1,43 @@
+.collapse {
+  transition: height 200ms;
+  border-bottom: 1px solid;
+}
+
+.content {
+  padding-bottom: 24px;
+}
+
+.plusMinus {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.plusMinus2 {
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.menuItem {
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.watchHere {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .plusMinus {
+    margin-right: 2px;
+  }
+  
+  .plusMinus2 {
+    margin-right: 2px;
+  }
+}

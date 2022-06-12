@@ -1,0 +1,65 @@
+.carousel {
+
+  height: 115px;
+  width: calc(100vw - 40px);
+  background: white;
+  margin-bottom: 20px;
+}
+
+
+.carousel li button:before{
+  font-size: 15px;
+  color: #7b8d91;
+}
+
+.carousel .slick-active {
+  color: #2c4249;
+}
+
+.card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.cardExamples {
+  display: flex;
+  
+  flex-wrap: wrap;
+  padding-left: 10px;
+  justify-content: flex-end;
+}
+
+.cardRow {
+  text-align: left;
+  font-family: AvenirBook;
+  text-align: justify;
+  font-size: 12px;
+  padding: 10px 5px ;
+  width: 100%;
+}
+
+.cardExampleItem {
+  width: 48%;
+  margin: auto;
+  text-align: left;
+  flex-grow: 1;
+}
+.carousel img {
+  margin: auto;
+  width: 100%;
+}
+
+.checkIcon {
+  width: 12px;
+  min-width: 12px;
+  padding-top: 10px;
+
+}
+

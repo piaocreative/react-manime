@@ -1,0 +1,240 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Recipient List */
+
+.recipientListContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f5f1e9;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.recipientTitle {
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2c4349;
+  padding-bottom: 8px;
+  /* font-size: 14px; */
+}
+
+.recipientCounts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.recipientCounts .label {
+  font-family: AvenirHeavy;
+}
+
+.recipientEmail {
+  font-family: avenirHeavy;
+}
+
+/* Message */
+.messagePanel {
+  padding: 16px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.messagePanel .label {
+  font-family: AvenirHeavy;
+}
+
+.editRecipients {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Banner */
+
+.confirmBannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5efe7;
+}
+
+.orderConfirmLabel {
+  font-size: 14px;
+  font-family: AvenirHeavy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.orderConfirmTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 16px 0;
+}
+
+.orderNextStepText {
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.confirmBannerBow {
+  width: 64px;
+  object-fit: contain;
+}
+
+.groupGiftImage {
+  width: 160px;
+  object-fit: contain;
+  margin-bottom: -84px;
+  z-index: 1;
+}
+
+/* Next Step */
+
+.confirmNextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(  400px, 100vw);
+  margin: 80px 0 0;
+  padding: 24px 16px;
+}
+
+.confirmNextLabel {
+  font-family: AvenirHeavy;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.redeemButton {
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.nextStepDescription {
+  margin-top: 16px;
+  font-style: italic;
+}
+
+.shippingDescription {
+  font-size: 13px;
+  margin-top: 8px;
+  font-family: GentiumBasic;
+}
+
+.confirmNextStepHeader {
+  display: flex;
+  width: 100%;
+  padding-bottom: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, rgba(252, 225, 206, 0), #f9d0b7 17%, rgba(249, 206, 180, 0.88) 79%, rgba(247, 191, 160, 0));
+  border-image-slice: 0 0 1 0;
+  border-top: none;
+  margin-bottom: 24px;
+}
+
+.confirmNextStepContent {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+  width: 100%;
+  margin-top: -40px;
+}
+
+.nextStepTitle {
+  color: #f7bfa0;
+  letter-spacing: 1px;
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nextStepIndex {
+  font-family: AvenirHeavy;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-image: url(/static/icons/color-water-drop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 30px;
+  padding-top: 8px;
+  margin: 0 auto 16px;
+}
+
+.nextStepWaterDrop {
+  height: 92px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.nextText {
+  font-family: 'AvenirBook';
+  font-size: 10px;
+}
+
+.errorContainer {
+  width: min(  400px, 100vw);
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 480px) {
+  .wrapper {
+    width: 480px;
+  }
+
+  .recipientListContainer {
+    padding: 40px;
+  }
+
+  .recipientTitle {
+    padding-bottom: 20px;
+  }
+
+  .confirmNextContainer {
+    margin: 80px auto 0;
+  }
+}
+.redeemErrorMessage {
+  font-family: 'AvenirLight';
+  font-style: italic;
+
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+
+}
+.bottomErrorMessage {  
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .confirmNextContainer {
+    max-width: 680px;
+  }
+}

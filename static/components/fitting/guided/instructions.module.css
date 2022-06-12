@@ -1,0 +1,92 @@
+.container {
+
+}
+
+.contentContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdf2ec;
+  align-items: center;
+
+}
+
+
+.videoContainer {
+  position: fixed;
+  top: -55px;
+
+}
+.videoStyle {
+  width: calc(100vw + 55px);
+  height: calc(100vh + 55px);
+  object-fit: cover;
+}
+
+
+
+
+.instructions {
+  position: fixed;
+  bottom: 20px;
+  place-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background: white;
+  width: calc(100vw - 30px);
+  padding: 20px 10px;
+
+}
+
+.cardExamples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardExampleItem {
+  width: 48%;
+}
+
+.button {
+  width: 100%;
+  text-transform: uppercase;
+}
+.title{
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 28px;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+.subTitle {
+  font-family: avenirHeavy;
+  font-size: 14px;
+
+}
+
+.description {
+  font-size: 13px;
+  height: 60px;
+}
+
+
+.bold {
+  font-family: avenirHeavy;
+}
+
+.checkIcon {
+  width: 16px;
+  min-width: 16px;
+  margin: 0 4px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+
+  .buttonLine {
+    position: unset;
+    width: 100%;
+  }
+}

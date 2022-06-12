@@ -1,0 +1,172 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding: 28px 0 16px;
+  background: #FCF9F7;
+  margin-bottom: 12px;
+}
+
+.topTitle {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.imagePanel {
+  min-height: 200px;
+  display: flex;
+}
+
+.subPanel {
+  width: 50%;
+  font-size: 11px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+}
+
+.subPanelLeft {
+  background-color: #D8D8D830;
+  margin-right: 4px;
+}
+
+.subPanelRight {
+  background-color: #F7BFA0;
+  margin-left: 4px;
+}
+
+.subTitle {
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+}
+
+.poorFitPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goodFitPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.leftDescription {
+  order: 1;
+  padding-top: 16px;
+  background: #f6f3f2;
+}
+
+.poorFitImage {
+  margin-bottom: -40px;
+}
+
+.rightDescription {
+  text-align: right;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-top: 16px;
+  background: #F7BFA0;
+  height: 100%;
+}
+
+.reviewButton {
+  margin-top: 16px;
+  margin-left: 16px;
+  width: calc(100% - 32px);
+  color: #979797 !important;
+  border: 1px solid #979797 !important;
+  background-color: unset !important;
+  background: transparent;
+}
+
+.reviewButton:hover {
+  border: 1px solid #2C4349 !important;
+  color: #2C4349 !important;
+}
+
+.reviewButton:hover {
+  background-color: #fff !important;
+}
+
+.message {
+  margin-top: 4px;
+  margin-left: 16px;
+  font-size: 12px;
+  color: #F7BFA0;
+  height: 40;
+}
+
+.linkToShop {
+  color: #F7BFA0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .poorFitPanel {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .goodFitPanel {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .poorFitImage {
+    margin-bottom: unset;
+  }
+
+  .leftDescription {
+    order: 0;
+    padding-top: unset;
+  }
+
+  .rightDescription {
+    padding-top: unset;
+    height: unset;
+    background: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 48%;
+    height: 100%;
+    padding: 32px;
+    margin-bottom: 0;
+  }
+
+  .reviewButton {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .message {
+    margin-left: 0;
+    height: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .subPanel {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="37" viewBox="0 0 22 37">
+    <defs>
+        <linearGradient id="xtx4weavla" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stopColor="#283F44"/>
+            <stop offset="100%" stopColor="#F4ECE7"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#xtx4weavla)" fill-rule="evenodd" d="M926 652c-7.319 0-11 11.34-11 20.25 0 8.909 1.484 16.75 11.114 16.75S937 678.805 937 672.25c0-6.556-3.681-20.25-11-20.25z" transform="translate(-915 -652)"/>
+</svg>

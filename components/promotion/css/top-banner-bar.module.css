@@ -1,0 +1,23 @@
+.container {
+  background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/pay-forward-banner-mobile.jpg?v=1607540966);
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  background-size: cover;
+  background-position: center;
+  height: 132px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 414px) {
+  .container {
+    height: 144px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 112px;
+    margin-bottom: 36px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0253/6561/0605/files/pay-forward-banner-desktop.jpg?v=1607540967);
+  }
+}

@@ -1,0 +1,111 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  background-color: #fdf3ed;
+  /* background-image: url('/static/icons/light-apricot-bubble.svg');
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: calc(100% - 60px); */
+  padding: 18px 18px 20px 18px;
+  width: 100%;
+  color: #2C4349;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  font-family: 'avenirLight';
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 36px;
+}
+
+.description {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.rowContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backButton {
+  position: absolute;
+  left: 12px;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 20px;
+}
+
+.backButton:hover {
+  padding: 6px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #F7BFA0;
+}
+
+.skipButton {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+.question {
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.skipLabel {
+  font-family: 'avenirHeavy';
+  margin-bottom: 80px;
+  letter-spacing: 0.5px !important;
+}
+
+.fittingSuccessLogo {
+  /* height: 240px; */
+  object-fit: contain;
+}
+
+.backImage {
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: calc(100% - 32px);
+  left: 50%;
+  top: 60px;
+}
+
+.actionButton {
+  height: 40px;
+  margin-top: 16px;
+  letter-spacing: 3px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (min-width: 480px) {
+  .root {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

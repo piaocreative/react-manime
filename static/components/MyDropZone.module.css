@@ -1,0 +1,89 @@
+.originDrop {
+  /* width: 180px; */
+  width: 100%;
+  height: calc(100vh - 280px);
+  margin-left: 0px;
+  border: 2px dotted gray;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+}
+
+.dropzoneImageContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.dropzoneImageContainer>img {
+  width: 100%;
+  height: auto;
+}
+
+.fileDragEnter {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  color: black;
+  text-align: center;
+  border: 5px groove gray;
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fileDragEnter>p{
+  font-size: 20px;
+  font-family: serif;
+  margin-top: 9px;
+}
+
+.onlyMobileView {
+  display: block;
+}
+
+.onlyDesktopView {
+  display: block;
+}
+
+.retakeButton {
+  position: fixed !important;
+  bottom: 36px;
+  left: max(46px, calc(50% - 221px));
+  width: calc(48% - 46px);
+  max-width: 211px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #2C4349;
+  color: #2C4349;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 200;
+}
+
+.retakeButton:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 479px) {
+  .originDrop {
+    width: 100%;
+    
+  }
+
+  .onlyMobileView {
+    display: block;
+  }
+
+  .onlyDesktopView {
+    display: none;
+  }
+
+  .retakeButton {
+    left: 46px;
+  }
+}
